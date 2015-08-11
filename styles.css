@@ -3,3 +3,179 @@
   padding: 0;
   border: none;
 }
+html {
+  font-family: 'Roboto', sans-serif;
+  background: #f5f5f5;
+  font-size: 1px;
+  font-weight: 500;
+}
+@media all and (max-width: 640px) {
+  html {
+    font-size: 0.5px;
+  }
+}
+@media all and (min-width: 640px) {
+  html {
+    font-size: 1px;
+  }
+}
+html body .container {
+  margin: 0 69rem 73rem;
+}
+html body .container .title {
+  margin: 36rem auto 0;
+  font-size: 38rem;
+  font-weight: 200;
+  text-align: center;
+}
+html body .container .card-wrapper .card-title {
+  font-size: 30rem;
+  font-weight: 500;
+  margin: 46rem auto 24rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+html body .container .card-wrapper .card {
+  width: 502rem;
+  height: 320rem;
+  background: url('card-visa.png') center no-repeat;
+  border-radius: 4rem;
+  margin: 0 auto;
+  box-shadow: 0 30rem 35rem rgba(0, 0, 0, 0.1);
+}
+html body .container .card-wrapper .card label {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 22rem;
+  font-weight: 200;
+  margin: 35rem 32rem 16rem;
+  display: block;
+}
+html body .container .card-wrapper .card .left {
+  float: left;
+}
+html body .container .card-wrapper .card .right {
+  float: right;
+}
+html body .container .card-wrapper .card .visa-logo {
+  float: right;
+  width: 80rem;
+  height: 27rem;
+  background: url('visa-logo.png') center no-repeat;
+  background-size: 100% 100%;
+  margin: 25.8rem 32rem 15.3rem 0;
+}
+html body .container .card-wrapper .card .card-number {
+  width: 352rem;
+  font-size: 28rem;
+}
+html body .container .card-wrapper .card .due {
+  width: 98.7rem;
+  font-size: 28rem;
+  padding: 0 55rem;
+}
+html body .container .card-wrapper .card .cvc {
+  width: 55rem;
+  font-size: 28rem;
+  padding: 0 55rem;
+}
+html body .container .card-wrapper .card input[type="text"],
+html body .container .card-wrapper .card input[type="password"] {
+  color: #83919e;
+  display: block;
+  height: 66rem;
+  letter-spacing: 4rem;
+  font-family: 'Robot', sans-serif;
+  font-weight: bold;
+  margin: 15.3rem 32rem 0;
+  border-radius: 4rem;
+  padding: 0 43rem;
+  text-align: center;
+}
+html body .container .card-to-wrapper .card-to-title {
+  font-size: 30rem;
+  font-weight: 500;
+  margin: 54rem auto 24rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+html body .container .card-to-wrapper .card-to {
+  width: 502rem;
+  height: 168rem;
+  background: #34495e;
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 4rem 4rem 0 0;
+}
+html body .container .card-to-wrapper .card-to label {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 22rem;
+  font-weight: 200;
+  margin: 25rem 32rem 16rem;
+  display: block;
+  float: left;
+}
+html body .container .card-to-wrapper .card-to .card-to-number {
+  color: #83919e;
+  display: block;
+  height: 66rem;
+  letter-spacing: 4rem;
+  font-family: 'Robot', sans-serif;
+  font-weight: bold;
+  margin: 0 32rem;
+  border-radius: 4rem;
+  padding: 0 43rem;
+  text-align: center;
+  width: 352rem;
+  font-size: 28rem;
+}
+html body .container .sum-wrapper {
+  box-shadow: 0rem -11rem 20rem rgba(0, 0, 0, 0.2);
+  margin: 0 -69rem;
+}
+html body .container .sum-wrapper .sum-inner-wrapper {
+  width: 502rem;
+  margin: 0 auto;
+}
+html body .container .sum-wrapper .commission {
+  display: block;
+  font-size: 18rem;
+  color: #878787;
+  font-weight: 200;
+  margin: 4rem 0 0 0;
+}
+html body .container .sum-wrapper .sum-label {
+  display: block;
+  font-size: 22rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 25rem 0 0 0;
+}
+html body .container .sum-wrapper .sum {
+  border: solid 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 4rem;
+  width: 422rem;
+  height: 84rem;
+  font-size: 28rem;
+  color: #444;
+  padding: 0 40rem;
+  margin: 16rem 0 0 0;
+}
+html body .container .button-next {
+  margin: 60rem auto;
+  font-size: 40rem;
+  color: #fff;
+  background-color: #f1365a;
+  font-weight: 200;
+  width: 232rem;
+  padding: 27rem 134rem;
+  border-radius: 4rem;
+}
+html body .container .logo {
+  width: 224rem;
+  height: 49rem;
+  margin: 0 auto;
+  background: url('vengo-logo.png') center no-repeat;
+  background-size: 100% 100%;
+}

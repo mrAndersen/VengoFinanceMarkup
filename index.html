@@ -4,8 +4,48 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,300&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
+<div class="container">
+    <div class="title">Отправить перевод</div>
+    <div class="card-wrapper">
+        <div class="card-title">Ваша карта</div>
+        <div class="card">
+            <div class="visa-logo"></div>
+            <input type="text" class="card-number" name="">
+            <div class="left">
+                <label>Срок действия</label>
+                <input type="text" class="due">
+            </div>
+            <div class="right">
+                <label>cvv/cvc</label>
+                <input type="password" class="cvc" maxlength="3">
+            </div>
+        </div>
+    </div>
+    <div class="card-to-wrapper">
+        <div class="card-to-title">
+            Карта получателя
+        </div>
+        <div class="card-to">
+            <label>Номер карты</label>
+            <input type="text" class="card-to-number" name="">
+        </div>
+    </div>
+    <div class="sum-wrapper">
+        <div class="sum-inner-wrapper">
+            <label class="sum-label">Сумма перевода</label>
+            <span class="commission">Комиссия составляет 1,5%, минимум 30 рублей</span>
+            <input type="text" class="sum">
+        </div>
+    </div>
+    <div class="button-next">
+        Продолжить
+    </div>
+    <div class="logo"></div>
+</div>
 </body>
 </html>
