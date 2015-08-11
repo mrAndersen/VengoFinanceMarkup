@@ -1,5 +1,5 @@
 {
-    "name": "rfi_p2p_adaptive",
+    "name": "test_2",
     "cssFiles": [ "style.css", "style-more.css" ],
     "jsFiles" : [ "jquery.mask.min.js", "jquery.longShadow.js", "script.js", "script-more.js" ],
     "languageSwitcherStyle": "dropdown",
