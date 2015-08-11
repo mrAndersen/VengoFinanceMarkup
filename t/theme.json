@@ -1,24 +1,35 @@
 {
   "name": "vengo_finance_mobile",
-  "cssFiles": [ "style.css", "_p2p.css" ],
-  "jsFiles" : [ "script.js", "p2p.js" ],
+  "cssFiles": [
+    "_p2p.css"
+  ],
+  "jsFiles": [
+    "script.js"
+  ],
   "languageSwitcherStyle": "dropdown",
   "cvcRcSwitcherStyle": null,
-  "formOptionalInputs": [ "email", "phone" ],
-  "layout": [ "page",
+  "formOptionalInputs": [
+    "email",
+    "phone"
+  ],
+  "layout": [
+    "page",
     "NOT IMPLEMENTED"
   ],
-  "payTransferLayout": [ "page",
+  "payTransferLayout": [
+    "page",
     "PAYTRANSFER_HEADER_ADAPTIVE",
     "PAYTRANSFER_FORM_ADAPTIVE",
     "PAYTRANSFER_FOOTER_ADAPTIVE"
   ],
-  "successLayout": [ "page",
+  "successLayout": [
+    "page",
     "PAYTRANSFER_HEADER_ADAPTIVE",
     "PAYTRANSFER_SUCCESS_ADAPTIVE",
     "PAYTRANSFER_FOOTER_ADAPTIVE"
   ],
-  "errorLayout": [ "page",
+  "errorLayout": [
+    "page",
     "PAYTRANSFER_HEADER_ADAPTIVE",
     "PAYTRANSFER_ERROR_ADAPTIVE",
     "PAYTRANSFER_FOOTER_ADAPTIVE"
