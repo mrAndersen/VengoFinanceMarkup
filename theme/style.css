@@ -1,0 +1,714 @@
+/* CSS Document */
+
+@import url(//fonts.googleapis.com/css?family=Open+Sans:600,400&subset=latin,cyrillic);
+body {
+	background: url(bg.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+body, h2, h3, h4, p {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: #333333;
+	line-height: 16px;
+}
+a {
+	color: #ff3366;
+	text-decoration: none;
+}
+#mainBox {
+	padding: 20px;
+	min-width: 320px;
+	overflow: hidden;
+}
+#content {
+	max-width: 1024px;
+	background: #fff;
+	margin: auto;
+}
+.content {
+	width: 88%;
+	margin: auto;
+	overflow: hidden;
+}
+.content p {
+	font-size: 12px;
+	line-height: 14px;
+}
+input {
+	background: #fff;
+}
+/*
+
+	HEADER
+
+*/
+
+#header {
+	padding: 8px 0;
+}
+#rfi_logo {
+	background: url(rfi_logo_h.png) no-repeat center;
+	height: 42px;
+	width: 155px;
+	float: left;
+	text-indent: -9999px;
+}
+#phone, #phone2 {
+	float: right;
+	padding-left: 30px;
+	background: url(phone_icon.png) left center no-repeat;
+	font-size: 18px;
+	line-height: 40px;
+}
+#header h2, #phone2, #message p img {
+	display: none;
+}
+/*
+
+	TITLE
+
+*/
+
+#title h2, #popupContent h2 {
+	text-align: center;
+	clear: both;
+	line-height: 32px;
+	font-size: 28px;
+	padding: 5px 15px 15px;
+	max-width: 750px;
+	margin: auto;
+}
+/*
+
+	TRANSFER BOX
+
+*/
+
+#transferBox {
+	background: url(mainBox_bg.png) top center;
+	color: #fff;
+	padding-top: 35px;
+	line-height: 30px;
+	position: relative;
+}
+#PAYTRANSFER_HEADER_ADAPTIVE {
+	background: url(longshadow.png) 70px 0 no-repeat;
+}
+#transferBox .senderCard, #transferBox .transferAmmount, #receiverCard {
+	float: left;
+	padding: 25px 18px 18px;
+	margin-right: 27px;
+	height: 280px;
+	position: relative;
+}
+#transferBox .senderCard {
+	width: 314px;
+	background: url(bg_cards.png) left top no-repeat;
+}
+#transferBox .senderCard-expLabel, #transferBox .senderCard-expMonth, #transferBox .senderCard-cvcLabel, #transferBox .senderCard-expYear, #transferBox .senderCard-cvcInput, #transferBox .senderCard-expDivider {
+	float: left;
+	margin-right: 8px;
+	line-height: 40px;
+}
+#transferBox .senderCard-numberInput input, #transferBox .senderCard-expLabel input, #transferBox .senderCard-expMonth input, #transferBox .senderCard-cvcLabel input, #transferBox .senderCard-expYear input, #transferBox .senderCard-cvcInput input {
+	width: 44px;
+	margin-bottom: 34px;
+}
+#transferBox .senderCard-numberInput input, #PayTransferForm_payment_to {
+	width: 256px;
+}
+#commission {
+	position: absolute;
+	width: 560px;
+	height: 80px;
+	top: 265px;
+	left: 440px;
+	z-index: 10;
+}
+#commission * {
+	float: left;
+	margin-right: 10px;
+	line-height: 34px;
+}
+#commission .transferAmmount-helpText {
+	position: absolute;
+	top: 35px;
+	background: url(tooltip.png) no-repeat top center;
+	width: 320px;
+	height: 45px;
+	line-height: 50px;
+	text-align: center;
+	left: 53px;
+	display: none;
+}
+#commission .transferAmmount-helpIcon {
+	height: 34px;
+	width: 24px;
+	background: url(help_icon.png) center no-repeat;
+	position: relative;
+	left: -30px;
+}
+#commission .transferAmmount-commission, #commission .totalAmount div {
+	background: url(commision_bg.png) no-repeat center;
+	width: 134px;
+	height: 34px;
+	text-indent: 10px;
+}
+#transferBox .transferAmmount {
+	width: 144px;
+	background: url(bg_ammount.png) left top no-repeat;
+}
+#transferBox .transferAmmount-ammountLabel {
+	text-align: center;
+	margin-bottom: 75px;
+}
+#transferBox .transferAmmount input {
+	width: 118px;
+}
+#receiverCard {
+	width: 280px;
+	background: url(bg_cards2.png) left top no-repeat;
+	margin: 0;
+}
+#transferBox input, #submitBox button, #popupBox button {
+	border: 3px solid #ee394a;
+	outline: none;
+	height: 32px;
+	border-radius: 5px;
+	padding: 0 10px;
+}
+#transferBox .senderCard-cvcLabel {
+	margin-left: 96px;
+	margin-top: 24px;
+}
+#transferBox .senderCard-cvcInput {
+	margin-top: 15px;
+}
+#transferBox input#PayTransferForm_cvc2 {
+	border-color: #bdbcbc;
+}
+input.visa {
+	background: #fff url(input_visa.png) no-repeat right center;
+}
+input.master {
+	background: #fff url(input_master.png) no-repeat right center;
+}
+/*
+
+	ERROR
+
+*/
+
+#transferBox .errorMessage {
+	font-size: 12px;
+	min-width:84px;
+	line-height:12px;
+	padding-top:2px;
+}
+#transferBox .senderCard-numberError, #transferBox .senderCard-expError, #transferBox .senderCard-cvcError, #transferBox .senderCard-expError div {
+	position: absolute;
+	line-height: 12px;
+}
+#transferBox .senderCard-numberError {
+	top: 94px;
+	left: 20px;
+}
+#transferBox .senderCard-expError {
+	top: 170px;
+	left: 135px;
+}
+#transferBox .senderCard-cvcError {
+	top: 257px;
+	left: 236px;
+	color: #ff4859;
+}
+#transferBox .error input {
+	border-color: #3798cb !important;
+}
+#PayTransferForm_exp_year_em_ {
+	left: 94px;
+}
+/*
+
+	SUBMIT
+
+*/
+
+#submitBox {
+	clear: both;
+	background: #f5f5f5;
+	color: #333333;
+	font-size: 14px;
+	padding: 10px 0;
+	overflow: hidden;
+}
+#submitBox .content {
+	overflow: visible;
+}
+#agreeBox {
+	float: left;
+	line-height: 30px;
+	padding-top: 10px;
+}
+#agreeBox input {
+	height: auto;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-top: 8px;
+	float: left;
+}
+#proceedBox {
+	float: right;
+}
+input#send_button, #submitBox button, #popupBox button {
+	width: 200px;
+	height: 50px;
+	background: #ff4859;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	line-height: 50px;
+	border: 0;
+	cursor: pointer;
+}
+input#send_button:hover, #submitBox button:hover, #popupBox button:hover {
+	background-color: #cc2648;
+}
+/*
+
+	DESCRIPTION
+
+*/
+
+#description {
+	padding: 20px 0;
+}
+#description h3 {
+	padding: 8px;
+}
+#description .col {
+	width: 50%;
+	float: left;
+}
+#description .col p {
+	padding: 8px;
+}
+/*
+
+	MESSAGE
+
+*/
+
+#message {
+}
+#message p {
+	background: #f5f5f5 url(lock_icon.png) 16px center no-repeat;
+	padding: 20px 25px 20px 90px;
+}
+/*
+
+	FOOTER
+
+*/
+
+#footer {
+	padding: 20px 0;
+}
+#footer .content {
+	min-height: 28px;
+}
+#footer p {
+	font-size: 14px;
+	line-height: 28px;
+	float: left;
+}
+#footer #logos {
+	background: url(payment_logo.png) right center no-repeat;
+	float: right;
+	height: 28px;
+	width: 70%;
+}
+/*
+
+	SUCCESS or FAIL
+
+*/
+
+.success .content, .fail .content {
+	max-width: 350px !important;
+	min-height: 200px;
+}
+.success .icon {
+	background: url(success.png) no-repeat top center;
+}
+.fail .icon {
+	background: url(fail.png) no-repeat top center;
+}
+.success .col, .fail .col {
+	float: left;
+	min-width: 80px;
+	max-width: 190px;
+	min-height: 80px;
+	padding: 0 18px;
+}
+.success h4, .fail h4 {
+	font-size: 24px;
+	color: #fff;
+	padding: 10px 0 50px;
+	text-align: center;
+}
+.success p, .fail p {
+	font-size: 16px;
+	color: #fff;
+	padding-bottom: 10px;
+	line-height: 20px
+}
+.success #submitBox .content, .fail #submitBox .content {
+	max-width: none !important;
+	min-height: 50px;
+}
+/*
+
+	POPUP
+
+*/
+
+#popupBox {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(255,255,255,0.8);
+	top: 0;
+	left: 0;
+	z-index: 100;
+	min-width: 303px;
+}
+#popupContent {
+	max-width: 690px;
+	margin: 10% auto 0;
+	padding: 5%;
+	background: #fff;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 30px;
+	position: relative;
+}
+#popupContent p {
+	padding: 6px 0;
+}
+#closePopup {
+	background: url(close.png) center no-repeat;
+	height: 60px;
+	width: 60px;
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+#popupContent textarea {
+	padding: 15px;
+	min-width: 270px;
+	margin: 20px 0;
+	border: 2px solid #ee394a;
+	border-radius: 5px;
+}
+#recaptcha {
+	padding: 10px 0;
+}
+#recaptcha img {
+	width: 100%;
+	max-width: 304px;
+}
+#bottomFrame, #topFrame{
+	position: fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	background: url(bg.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height:20px;
+}
+#topFrame{
+	top:0;
+	bottom:auto;
+}
+
+/*
+
+	MEDIA
+
+*/
+
+
+
+@media screen and (max-width: 1080px) {
+#PAYTRANSFER_HEADER_ADAPTIVE {
+	background-image: none;
+}
+#transferBox .content {
+	max-width: 584px;
+	position: relative;
+	overflow: visible;
+}
+#receiverCard {
+	height: 190px;
+}
+#commission {
+	position: static;
+	float: left;
+	width: 240px;
+}
+#commission * {
+	clear: both;
+}
+#commission .transferAmmount-helpIcon {
+	position: absolute;
+	margin-top: 10px;
+	left: 0;
+	top: 452px;
+}
+#commission .transferAmmount-helpText {
+	top: 490px;
+	left: 0px;
+	background-position: -386px 0;
+	width: 224px;
+	height: 48px;
+	line-height: 20px;
+	padding-top: 10px;
+}
+/*
+#submitBox .content {
+	overflow: hidden;
+}
+*/
+#agreeBox {
+	width: 374px;
+	line-height: 16px;
+}
+#description h3 {
+	line-height: 20px;
+}
+/*
+
+}
+
+
+
+@media screen and (max-width: 722px) {
+
+*/
+
+#transferBox .content {
+	max-width: 346px;
+}
+#transferBox .senderCard, #transferBox .transferAmmount, #receiverCard {
+	height: auto;
+}
+#transferBox .transferAmmount {
+	background: none;
+	width: 300px;
+	padding: 0;
+	padding: 0 48px 18px;
+}
+#transferBox .transferAmmount-ammountLabel {
+	float: left;
+	width: 80px;
+	margin: 0;
+	text-align: left;
+	line-height: 18px;
+}
+#transferBox .transferAmmount input {
+	float: right;
+}
+#commission {
+	width: 300px;
+	padding-left: 50px;
+}
+#commission * {
+	clear: none;
+}
+#commission .transferAmmount-commission, #commission .totalAmount div {
+	float: right;
+}
+#commission .totalAmount {
+	width: 100%;
+	margin-top: 8px;
+}
+#transferBox .transferAmmount-ammountError {
+	position: absolute;
+	right: 52px;
+	top: 38px;
+}
+#commission .transferAmmount-helpIcon, #commission .transferAmmount-helpText {
+	display: none;
+}
+#receiverCard {
+	margin-top: 20px;
+	float: right;
+}
+#proceedBox {
+	float: none;
+	margin: auto;
+	clear: both;
+	width: 200px;
+}
+#submitBox button {
+	margin: 10px auto;
+}
+#description .col {
+	width: 100%;
+}
+#footer #logos {
+	width: 100%;
+	background-position: center;
+}
+#footer p {
+	float: none;
+	clear: both;
+	text-align: center;
+	padding-top: 20px;
+}
+#closePopup {
+	top: -30px;
+}
+}
+
+@media screen and (max-width: 450px) {
+#mainBox {
+	padding: 0;
+}
+#rfi_logo {
+	width: 43px;
+	height: 82px;
+	background-image: url(rfi_logo_v.png);
+	margin-left: 20px;
+}
+#phone {
+	display: none;
+}
+#header h2 {
+	display: block;
+	padding: 0 0 0 30px;
+	float: left;
+	max-width: 168px;
+	line-height: 20px;
+}
+#header h2 b {
+	padding-bottom: 5px;
+	display: block;
+}
+#title {
+	display: none;
+}
+#transferBox {
+	padding-top: 20px;
+}
+#transferBox .content, #header .content {
+	width: 280px;
+}
+#transferBox .senderCard {
+	width: 260px;
+	background-image: url(bg_cards_s.png);
+	padding: 10px;
+}
+#transferBox .senderCard-numberInput input, #PayTransferForm_payment_to {
+	width: 210px;
+}
+#transferBox .senderCard-expLabel {
+	width: 68px;
+	line-height: 18px;
+}
+#transferBox .senderCard-numberError {
+	top: 82px;
+	left: 12px;
+}
+#transferBox .senderCard-numberInput input, #transferBox .senderCard-expLabel input, #transferBox .senderCard-expMonth input, #transferBox .senderCard-cvcLabel input, #transferBox .senderCard-expYear input, #transferBox .senderCard-cvcInput input {
+	margin-bottom: 20px;
+}
+#transferBox .senderCard-expError {
+	top: 142px;
+	left: 86px;
+}
+#transferBox .senderCard-cvcLabel {
+	margin-left: 48px;
+}
+#commission {
+	width: 268px;
+	padding-left: 10px;
+	font-size: 14px;
+}
+#transferBox .transferAmmount {
+	padding-left: 10px;
+	width: 238px;
+}
+#transferBox .transferAmmount input {
+	width: 90px;
+}
+#transferBox .transferAmmount-ammountError {
+	right: auto;
+}
+#receiverCard {
+	width: 240px;
+	background-position: center;
+	padding: 18px 18px 18px 22px;
+}
+#transferBox .senderCard-cvcError {
+	top: 213px;
+	left: 57px;
+}
+#footer #logos {
+	background-size: 100%;
+}
+#description {
+	padding: 10px 0;
+}
+#phone2 {
+	display: block;
+	margin: 20px auto;
+	float: none;
+	width: 165px;
+	background-color: #f5f5f5;
+	border: 10px solid #f5f5f5;
+	padding: 0 40px 0 58px;
+	background-position: 30px center;
+}
+#message p {
+	padding: 20px;
+	background-image: none;
+}
+#message p img {
+	display: block;
+	float: left;
+	padding-right: 20px;
+}
+.success .col, .fail .col {
+	float: none;
+	margin: 20px auto;
+}
+.success h4, .fail h4 {
+	line-height: 30px;
+	padding: 0;
+}
+#popupContent {
+	margin: 0;
+	padding-top: 30px;
+	height: 100%;
+}
+#popupContent div {
+	max-height: 90%;
+	overflow: auto;
+}
+#closePopup {
+	top: 10px;
+}
+#popupContent textarea {
+	width: 90%;
+	padding: 4%;
+	min-width: 200px;
+}
+#bottomFrame, #topFrame{
+	display:none;
+}
+}
