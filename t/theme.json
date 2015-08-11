@@ -1,6 +1,6 @@
 {
   "name": "vengo_finance_mobile",
-  "cssFiles": [ "style.css", "p2p.css" ],
+  "cssFiles": [ "style.css", "_p2p.css" ],
   "jsFiles" : [ "script.js", "p2p.js" ],
   "languageSwitcherStyle": "dropdown",
   "cvcRcSwitcherStyle": null,

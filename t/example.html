@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <link rel="stylesheet" type="text/css" href="https://unrealcode.ru/v//style.css"/>
-    <link rel="stylesheet" type="text/css" href="https://unrealcode.ru/v//style-more.css"/>
-    <script type="text/javascript" src="/assets/71bb054c/jquery.min.js"></script>
-    <script type="text/javascript" src="/assets/71bb054c/jquery.yiiactiveform.js"></script>
-    <script type="text/javascript" src="https://unrealcode.ru/v//jquery.mask.min.js"></script>
-    <script type="text/javascript" src="https://unrealcode.ru/v//jquery.longShadow.js"></script>
-    <script type="text/javascript" src="https://unrealcode.ru/v//script.js"></script>
-    <script type="text/javascript" src="https://unrealcode.ru/v//script-more.js"></script>
+    <link rel="stylesheet" href="_p2p.css" type="text/css">
     <title>Secure Payment Gateway - PayTransfer</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,300&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 </head>
 <body>
+<script>
+    $(function () {
+        $('#PAYTRANSFER_HEADER_ADAPTIVE').prepend('<div class="card-title">ВАША КАРТА</div>');
+        $('#PAYTRANSFER_HEADER_ADAPTIVE').prepend('<div class="title">Отправить перевод</div>');
+        $('.senderCard-cvcLabel p:eq(1)').remove();
+        $('.senderCard').after('<div class="card-to-title">Карта получателя </div>');
+        $(".transferAmmount").before($("#receiverCard"));
+        $(".transferAmmount").before($("#commission"));
+    });
+</script>
 <div id="page"><!-- CONTAINER -->
     <div id="mainBox">
         <!-- CONTENT -->
@@ -34,56 +36,7 @@
                 <h2>Простой и безопасный способ перевести средства с карты на карту в любую точку мира от «РФИ
                     Банка»</h2>
             </div>
-            <script type="text/javascript" src="/js/boomerang/boomerang-0.9.1417463177.min.js"></script>
-
-            <script type="text/javascript">
-                if (document.addEventListener) { // Modern browsers
-                    document.addEventListener("onBoomerangLoaded", function (e) {
-                        BOOMR.init({
-                            beacon_url: "/site/beaconBoomerang",
-                            RT: {
-                                // enabled
-                            },
-                            NavigationTiming: {
-                                // enabled
-                            },
-                            BW: {
-                                enabled: false
-                            },
-                            DNS: {
-                                enabled: false
-                            }
-                        });
-                        BOOMR.addVar({
-                            "service_id": null,
-                            "order_id": "345906",
-                            "operation": null,
-                            "page_id": "paytransfer.form.default"
-                        });
-                        BOOMR.subscribe('before_beacon', function (o) {
-                            BOOMR.removeVar("r"); // Yii extremely doesn't like this
-                        });
-                    });
-
-                }
-            </script>
             <!-- additional protection, if "X-Frame-Options: deny" fails -->
-
-            <style id="antiClickjack">body {
-                display: none !important;
-            }</style>
-
-            <script type="text/javascript">
-                if (self === top) {
-                    var antiClickjack = document.getElementById("antiClickjack");
-                    antiClickjack.parentNode.removeChild(antiClickjack);
-                } else {
-                    top.location = self.location;
-                }
-            </script>
-
-            <script type="text/javascript" src="/js/paytransfer.js?43982287501"></script>
-
             <!-- FORM -->
             <div id="transferBox">
                 <div id="PAYTRANSFER_HEADER_ADAPTIVE">
@@ -231,38 +184,11 @@
                                                           id="PayTransferForm_custom_field" type="hidden"/> <input
                                 name="PayTransferForm[lang]" id="PayTransferForm_lang" type="hidden"/> <input
                                 value="http://ya.ru/" name="PayTransferForm[back_url]" id="PayTransferForm_back_url"
-                                type="hidden"/> <input value="1439315430" name="PayTransferForm[post_time]"
+                                type="hidden"/> <input value="1439321820" name="PayTransferForm[post_time]"
                                                        id="PayTransferForm_post_time" type="hidden"/></form>
                     </div>
                 </div>
             </div>
-
-            <script type="text/javascript">
-                function form_update(form) {
-                    formUpdateTransferCommission(form.PayTransferForm_amount.value, form.PayTransferForm_currency.value, {
-                        "RUB": {
-                            "min": 1.1,
-                            "proc": 2.2
-                        }
-                    }, 'transferCommission', '{amount_commission}', 'transferTotalAmount', '{amount}', null, form.PayTransferForm_card.value, form.PayTransferForm_payment_to.value, null);
-
-                    form_cards_alert(
-                            form.PayTransferForm_card.value,
-                            form.PayTransferForm_payment_to.value,
-                            [
-                                {
-                                    "card_type_sender": "visa",
-                                    "card_type_receiver": "mastercard",
-                                    "alert_css_selector": "#alert_visa_mastercard"
-                                },
-                            ]
-                    );
-                }
-
-                $(document).ready(function () {
-                    form_update(document.forms["payment-form"]); // initial run on page load
-                });
-            </script>
             <!-- DESCRIPTION -->
             <div id="description">
                 <div class="content">
@@ -278,7 +204,7 @@
             <!-- MESSAGE -->
             <div id="message">
                 <div class="content">
-                    <p><img src="https://unrealcode.ru/v/lock_icon.png" alt=""/>Данные Вашей банковской карты
+                    <p><img src="https://test.unrealcode.ru/theme/lock_icon.png" alt=""/>Данные Вашей банковской карты
                         используются только в момент совершения операции и передаются по защищённому протоколу в
                         Банк-эквайер в зашифрованном виде. Реквизиты Вашей карты не сохраняются в системе и,
                         соответственно, не могут быть переданы третьим лицам. </p>
@@ -294,74 +220,5 @@
         </div>
     </div>
 </div>
-<script type="text/javascript">
-    /*<![CDATA[*/
-    jQuery(function ($) {
-        jQuery('#payment-form').yiiactiveform({
-            'validateOnSubmit': true,
-            'validateOnChange': true,
-            'attributes': [{
-                'id': 'PayTransferForm_card',
-                'inputID': 'PayTransferForm_card',
-                'errorID': 'PayTransferForm_card_em_',
-                'model': 'PayTransferForm',
-                'name': 'card',
-                'enableAjaxValidation': true
-            }, {
-                'id': 'PayTransferForm_exp_month',
-                'inputID': 'PayTransferForm_exp_month',
-                'errorID': 'PayTransferForm_exp_month_em_',
-                'model': 'PayTransferForm',
-                'name': 'exp_month',
-                'enableAjaxValidation': true
-            }, {
-                'id': 'PayTransferForm_exp_year',
-                'inputID': 'PayTransferForm_exp_year',
-                'errorID': 'PayTransferForm_exp_year_em_',
-                'model': 'PayTransferForm',
-                'name': 'exp_year',
-                'enableAjaxValidation': true
-            }, {
-                'id': 'PayTransferForm_cvc2',
-                'inputID': 'PayTransferForm_cvc2',
-                'errorID': 'PayTransferForm_cvc2_em_',
-                'model': 'PayTransferForm',
-                'name': 'cvc2',
-                'enableAjaxValidation': true
-            }, {
-                'id': 'PayTransferForm_cvc2_rc',
-                'inputID': 'PayTransferForm_cvc2_rc',
-                'errorID': 'PayTransferForm_cvc2_rc_em_',
-                'model': 'PayTransferForm',
-                'name': 'cvc2_rc',
-                'enableAjaxValidation': true
-            }, {
-                'id': 'PayTransferForm_amount',
-                'inputID': 'PayTransferForm_amount',
-                'errorID': 'PayTransferForm_amount_em_',
-                'model': 'PayTransferForm',
-                'name': 'amount',
-                'enableAjaxValidation': true
-            }, {
-                'id': 'PayTransferForm_currency',
-                'inputID': 'PayTransferForm_currency',
-                'errorID': 'PayTransferForm_currency_em_',
-                'model': 'PayTransferForm',
-                'name': 'currency',
-                'enableAjaxValidation': true
-            }, {
-                'id': 'PayTransferForm_payment_to',
-                'inputID': 'PayTransferForm_payment_to',
-                'errorID': 'PayTransferForm_payment_to_em_',
-                'model': 'PayTransferForm',
-                'name': 'payment_to',
-                'enableAjaxValidation': true
-            }],
-            'focus': '#PayTransferForm_card',
-            'errorCss': 'error'
-        });
-    });
-    /*]]>*/
-</script>
 </body>
 </html>

@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+html {
+  font-family: 'Roboto', sans-serif;
+  background: #f5f5f5;
+  font-size: 1px;
+  font-weight: 500;
+}
+@media all and (max-width: 640px) {
+  html {
+    font-size: 0.5px;
+  }
+}
+@media all and (min-width: 640px) {
+  html {
+    font-size: 1px;
+  }
+}
+html body #page #mainBox #content #header,
+html body #page #mainBox #content #title,
+html body #page #mainBox #content #description,
+html body #page #mainBox #content #message,
+html body #page #mainBox #content #footer {
+  display: none;
+}
+html body #page #mainBox #content #transferBox {
+  margin: 0 69rem 73rem;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE .card-title {
+  font-size: 30rem;
+  font-weight: 500;
+  margin: 46rem auto 24rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE .title {
+  margin: 36rem auto 0;
+  font-size: 38rem;
+  font-weight: 200;
+  text-align: center;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard {
+  width: 502rem;
+  height: 320rem;
+  background: url('card-visa.png') center no-repeat;
+  border-radius: 4rem;
+  margin: 0 auto;
+  box-shadow: 0 30rem 35rem rgba(0, 0, 0, 0.1);
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-numberLabel {
+  display: none;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-expLabel {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 22rem;
+  font-weight: 200;
+  margin: 35rem 32rem 0;
+  display: inline-block;
+  float: left;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-cvcLabel {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 22rem;
+  font-weight: 200;
+  margin: 35rem 0 0 92rem;
+  display: inline-block;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-numberInput {
+  position: relative;
+  float: left;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-numberInput:before {
+  content: '';
+  position: absolute;
+  top: 25.8rem;
+  right: 32em;
+  width: 80rem;
+  height: 27rem;
+  background: url('visa-logo.png') center no-repeat;
+  background-size: 100% 100%;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-numberInput input {
+  width: 352rem;
+  font-size: 28rem;
+  float: left;
+  color: #83919e;
+  display: block;
+  height: 66rem;
+  letter-spacing: 4rem;
+  font-family: 'Robot', sans-serif;
+  font-weight: bold;
+  margin: 66rem 32rem 0;
+  border-radius: 4rem;
+  padding: 0 43rem;
+  text-align: center;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-expDivider {
+  display: none;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-expMonth {
+  float: left;
+  clear: both;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-expMonth input {
+  color: #83919e;
+  display: block;
+  height: 66rem;
+  letter-spacing: 4rem;
+  font-family: 'Robot', sans-serif;
+  font-weight: bold;
+  margin: 15.3rem 0 0 32rem;
+  border-radius: 4rem;
+  text-align: center;
+  clear: both;
+  font-size: 28rem;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-expYear {
+  float: left;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-expYear input {
+  color: #83919e;
+  display: block;
+  height: 66rem;
+  letter-spacing: 4rem;
+  font-family: 'Robot', sans-serif;
+  font-weight: bold;
+  margin: 15.3rem 0 0 2rem;
+  border-radius: 4rem;
+  text-align: center;
+  clear: both;
+  font-size: 28rem;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-cvcInput {
+  float: right;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-cvcInput input {
+  color: #83919e;
+  display: block;
+  height: 66rem;
+  letter-spacing: 4rem;
+  font-family: 'Robot', sans-serif;
+  font-weight: bold;
+  margin: 15.3rem 32rem 0;
+  border-radius: 4rem;
+  padding: 0 43rem;
+  text-align: center;
+  clear: both;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .card-to-title {
+  font-size: 30rem;
+  font-weight: 500;
+  margin: 54rem auto 24rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content #receiverCard {
+  width: 502rem;
+  height: 168rem;
+  background: #34495e;
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 4rem 4rem 0 0;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content #receiverCard .receiverCard-numberLabel {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 22rem;
+  font-weight: 200;
+  margin: 25rem 32rem 16rem;
+  display: block;
+  float: left;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content #receiverCard .receiverCard-numberInput input {
+  color: #83919e;
+  display: block;
+  height: 66rem;
+  letter-spacing: 4rem;
+  font-family: 'Robot', sans-serif;
+  font-weight: bold;
+  margin: 0 32rem;
+  border-radius: 4rem;
+  padding: 0 43rem;
+  text-align: center;
+  width: 352rem;
+  font-size: 28rem;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form #submitBox #agreeBox {
+  display: none;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form #submitBox #proceedBox #send_button {
+  margin: 60rem auto;
+  font-size: 40rem;
+  color: #fff;
+  background-color: #f1365a;
+  font-weight: 200;
+  width: 232rem;
+  padding: 27rem 134rem;
+  border-radius: 4rem;
+}
