@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" type="text/css" href="https://unrealcode.ru/v//style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://unrealcode.ru/v//style-more.css"/>
+    <script type="text/javascript" src="/assets/71bb054c/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/71bb054c/jquery.yiiactiveform.js"></script>
+    <script type="text/javascript" src="https://unrealcode.ru/v//jquery.mask.min.js"></script>
+    <script type="text/javascript" src="https://unrealcode.ru/v//jquery.longShadow.js"></script>
+    <script type="text/javascript" src="https://unrealcode.ru/v//script.js"></script>
+    <script type="text/javascript" src="https://unrealcode.ru/v//script-more.js"></script>
+    <title>Secure Payment Gateway - PayTransfer</title>
+</head>
+<body>
+<div id="page"><!-- CONTAINER -->
+    <div id="mainBox">
+        <!-- CONTENT -->
+        <div id="content">
+            <!-- HEADER -->
+            <div id="header">
+                <div class="content"><a id="rfi_logo" href="http://rficb.ru/">РФИ БАНК</a>
+
+                    <p id="phone">+7 (495) 276-08-00</p>
+
+                    <h2><b>Перевести средства с карты на карту</b> Просто и безопасно с «РФИ Банк»</h2>
+                </div>
+            </div>
+            <!-- TITLE -->
+            <div id="title">
+                <h2>Простой и безопасный способ перевести средства с карты на карту в любую точку мира от «РФИ
+                    Банка»</h2>
+            </div>
+            <script type="text/javascript" src="/js/boomerang/boomerang-0.9.1417463177.min.js"></script>
+
+            <script type="text/javascript">
+                if (document.addEventListener) { // Modern browsers
+                    document.addEventListener("onBoomerangLoaded", function (e) {
+                        BOOMR.init({
+                            beacon_url: "/site/beaconBoomerang",
+                            RT: {
+                                // enabled
+                            },
+                            NavigationTiming: {
+                                // enabled
+                            },
+                            BW: {
+                                enabled: false
+                            },
+                            DNS: {
+                                enabled: false
+                            }
+                        });
+                        BOOMR.addVar({
+                            "service_id": null,
+                            "order_id": "345906",
+                            "operation": null,
+                            "page_id": "paytransfer.form.default"
+                        });
+                        BOOMR.subscribe('before_beacon', function (o) {
+                            BOOMR.removeVar("r"); // Yii extremely doesn't like this
+                        });
+                    });
+
+                }
+            </script>
+            <!-- additional protection, if "X-Frame-Options: deny" fails -->
+
+            <style id="antiClickjack">body {
+                display: none !important;
+            }</style>
+
+            <script type="text/javascript">
+                if (self === top) {
+                    var antiClickjack = document.getElementById("antiClickjack");
+                    antiClickjack.parentNode.removeChild(antiClickjack);
+                } else {
+                    top.location = self.location;
+                }
+            </script>
+
+            <script type="text/javascript" src="/js/paytransfer.js?43982287501"></script>
+
+            <!-- FORM -->
+            <div id="transferBox">
+                <div id="PAYTRANSFER_HEADER_ADAPTIVE">
+                    <div>
+                        <form autocomplete="off" id="payment-form" action="/site/paytransfer" method="post">
+                            <div class="content">
+                                <input name="PayTransferForm[phone]" id="PayTransferForm_phone" type="hidden"/>
+
+                                <div class="senderCard">
+                                    <!-- Номер карты отправителя -->
+                                    <div class="senderCard-numberLabel">Номер карты отправителя</div>
+                                    <div class="senderCard-numberInput">
+                                        <input maxlength="19" size="19"
+                                               onkeyup="form_update_bank_class(this); form_update(this.form);"
+                                               name="PayTransferForm[card]" id="PayTransferForm_card" type="text"/>
+                                    </div>
+                                    <div class="senderCard-numberError">
+                                        <div class="errorMessage" id="PayTransferForm_card_em_"
+                                             style="display:none"></div>
+                                    </div>
+
+                                    <!-- Срок действия карты -->
+                                    <div class="senderCard-expLabel">Срок действия</div>
+                                    <div class="senderCard-expMonth">
+                                        <input maxlength="2" size="2" name="PayTransferForm[exp_month]"
+                                               id="PayTransferForm_exp_month" type="text"/></div>
+                                    <div class="senderCard-expDivider"> /</div>
+                                    <div class="senderCard-expYear">
+                                        <input maxlength="2" size="2" name="PayTransferForm[exp_year]"
+                                               id="PayTransferForm_exp_year" type="text"/></div>
+                                    <div class="senderCard-expError">
+                                        <div class="errorMessage" id="PayTransferForm_exp_month_em_"
+                                             style="display:none"></div>
+                                        <div class="errorMessage" id="PayTransferForm_exp_year_em_"
+                                             style="display:none"></div>
+                                    </div>
+
+                                    <!-- CVC2/CVV2 карты отправителя  -->
+                                    <div class="senderCard-cvcLabel">
+                                        <p>CVC2/CVV2</p>
+
+                                        <p>карты отправителя</p>
+                                    </div>
+                                    <div class="senderCard-cvcInput">
+                                        <input maxlength="3" size="3" name="PayTransferForm[cvc2]"
+                                               id="PayTransferForm_cvc2" type="text"/> <input value="1"
+                                                                                              name="PayTransferForm[cvc2_rc]"
+                                                                                              id="PayTransferForm_cvc2_rc"
+                                                                                              type="hidden"/></div>
+                                    <div class="senderCard-cvcError">
+                                        <div class="errorMessage" id="PayTransferForm_cvc2_em_"
+                                             style="display:none"></div>
+                                        <div class="errorMessage" id="PayTransferForm_cvc2_rc_em_"
+                                             style="display:none"></div>
+                                    </div>
+                                </div>
+                                <!-- id=sender -->
+
+                                <div class="transferAmmount">
+                                    <!-- Сумма перевода -->
+                                    <div class="transferAmmount-ammountLabel">Сумма перевода</div>
+                                    <div class="transferAmmount-ammount">
+                                        <input value="RUB" name="PayTransferForm[currency]"
+                                               id="PayTransferForm_currency" type="hidden"/> <input
+                                            onkeyup="form_update(this.form);" name="PayTransferForm[amount]"
+                                            id="PayTransferForm_amount" type="text"/>
+                                        <noscript>
+                                            <div id="addinfo" style="color: #bc2a22; font-size: 12px;">Требуется
+                                                включённый Javascript. Без этого комиссия не сможет быть рассчитана
+                                            </div>
+                                        </noscript>
+                                    </div>
+                                    <div class="transferAmmount-ammountError">
+                                        <div class="errorMessage" id="PayTransferForm_amount_em_"
+                                             style="display:none"></div>
+                                        <div class="errorMessage" id="PayTransferForm_currency_em_"
+                                             style="display:none"></div>
+                                    </div>
+                                </div>
+                                <div id="commission">
+                                    <div class="transferAmmount-commissionLabel">Комиссия</div>
+                                    <div class="transferAmmount-commission" id="transferCommission"></div>
+                                    <div class="transferAmmount-helpIcon"></div>
+                                    <div class="transferAmmount-helpText">Комиссия взимается с отправителя</div>
+                                    <div class="totalAmount"><span class="totalAmount-label">Сумма списания</span>
+
+                                        <div class="totalAmount" id="transferTotalAmount"></div>
+                                    </div>
+                                </div>
+                                <div id="receiverCard">
+                                    <div class="receiverCard-numberLabel">Номер карты получателя</div>
+                                    <div class="receiverCard-numberInput">
+                                        <input maxlength="19" size="19"
+                                               onkeyup="form_update_bank_class(this); form_update(this.form);"
+                                               name="PayTransferForm[payment_to]" id="PayTransferForm_payment_to"
+                                               type="text"/></div>
+                                    <div class="receiverCard-logo"></div>
+                                    <div class="receiverCard-error">
+                                        <div class="errorMessage" id="PayTransferForm_payment_to_em_"
+                                             style="display:none"></div>
+                                    </div>
+                                </div>
+
+                                <input name="PayTransferForm[address]" id="PayTransferForm_address"
+                                       type="hidden"/><input name="PayTransferForm[town]" id="PayTransferForm_town"
+                                                             type="hidden"/><input name="PayTransferForm[zip]"
+                                                                                   id="PayTransferForm_zip"
+                                                                                   type="hidden"/><input
+                                    name="PayTransferForm[country]" id="PayTransferForm_country" type="hidden"/>
+                                <input value="1" name="PayTransferForm[free_transfer_amount]"
+                                       id="PayTransferForm_free_transfer_amount" type="hidden"/> <input value="1"
+                                                                                                        name="PayTransferForm[free_transfer_payment_to]"
+                                                                                                        id="PayTransferForm_free_transfer_payment_to"
+                                                                                                        type="hidden"/>
+                            </div>
+
+                            <div id="submitBox">
+                                <div class="content">
+                                    <div id="agreeBox">
+                                        <p id="alert_visa_mastercard" class="alert" style="display: none">Переводы с
+                                            VISA на MASTERCARD недоступны</p>
+                                        <input type="checkbox"
+                                               onclick="onAgreeToggle('send_button', this.checked, null, null)">
+                                        согласен с <a target="_blank" href="http://rfibank.ru/upload/docs/P2Prules.pdf">Условиями</a>
+                                        предоставления услуги и ознакомлен с <a target="_blank"
+                                                                                href="http://rfibank.ru/upload/docs/P2Ptarif.pdf">Тарифами</a>
+                                    </div>
+                                    <div id="proceedBox">
+                                        <input value="Выполнить" name="SEND_BUTTON" id="send_button" disabled="disabled"
+                                               type="submit"/></div>
+                                </div>
+                            </div>
+                            <!-- id=acceptMsg -->
+
+                            <!-- id=but-r -->
+
+                            <div></div>
+                            <!-- id=acceptMsg -->
+
+                            <input value="Пример описания перевода" name="PayTransferForm[desc]"
+                                   id="PayTransferForm_desc" type="hidden"/>
+                            <input name="PayTransferForm[service_id]" id="PayTransferForm_service_id" type="hidden"/>
+                            <input value="345906" name="PayTransferForm[order_id]" id="PayTransferForm_order_id"
+                                   type="hidden"/> <input name="PayTransferForm[custom_field]"
+                                                          id="PayTransferForm_custom_field" type="hidden"/> <input
+                                name="PayTransferForm[lang]" id="PayTransferForm_lang" type="hidden"/> <input
+                                value="http://ya.ru/" name="PayTransferForm[back_url]" id="PayTransferForm_back_url"
+                                type="hidden"/> <input value="1439315430" name="PayTransferForm[post_time]"
+                                                       id="PayTransferForm_post_time" type="hidden"/></form>
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                function form_update(form) {
+                    formUpdateTransferCommission(form.PayTransferForm_amount.value, form.PayTransferForm_currency.value, {
+                        "RUB": {
+                            "min": 1.1,
+                            "proc": 2.2
+                        }
+                    }, 'transferCommission', '{amount_commission}', 'transferTotalAmount', '{amount}', null, form.PayTransferForm_card.value, form.PayTransferForm_payment_to.value, null);
+
+                    form_cards_alert(
+                            form.PayTransferForm_card.value,
+                            form.PayTransferForm_payment_to.value,
+                            [
+                                {
+                                    "card_type_sender": "visa",
+                                    "card_type_receiver": "mastercard",
+                                    "alert_css_selector": "#alert_visa_mastercard"
+                                },
+                            ]
+                    );
+                }
+
+                $(document).ready(function () {
+                    form_update(document.forms["payment-form"]); // initial run on page load
+                });
+            </script>
+            <!-- DESCRIPTION -->
+            <div id="description">
+                <div class="content">
+                    <h3>Комиссия за перевод денежных средств для Отправителя составляет 5.5%, но не менее 50
+                        рублей.</h3>
+
+                    <p id="phone2">111+7 (495) 276-08-00</p>
+
+                    <p>Банки выдавшие Вашу карту (эмитенты) могут устанавливать дополнительные условия для проведения
+                        переводов с карты на карту.</p>
+                </div>
+            </div>
+            <!-- MESSAGE -->
+            <div id="message">
+                <div class="content">
+                    <p><img src="https://unrealcode.ru/v/lock_icon.png" alt=""/>Данные Вашей банковской карты
+                        используются только в момент совершения операции и передаются по защищённому протоколу в
+                        Банк-эквайер в зашифрованном виде. Реквизиты Вашей карты не сохраняются в системе и,
+                        соответственно, не могут быть переданы третьим лицам. </p>
+                </div>
+            </div>
+            <!-- FOOTER -->
+            <div id="footer">
+                <div class="content">
+                    <div id="logos"></div>
+                    <p>© 2015 ЗАО РФИ Банк</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    /*<![CDATA[*/
+    jQuery(function ($) {
+        jQuery('#payment-form').yiiactiveform({
+            'validateOnSubmit': true,
+            'validateOnChange': true,
+            'attributes': [{
+                'id': 'PayTransferForm_card',
+                'inputID': 'PayTransferForm_card',
+                'errorID': 'PayTransferForm_card_em_',
+                'model': 'PayTransferForm',
+                'name': 'card',
+                'enableAjaxValidation': true
+            }, {
+                'id': 'PayTransferForm_exp_month',
+                'inputID': 'PayTransferForm_exp_month',
+                'errorID': 'PayTransferForm_exp_month_em_',
+                'model': 'PayTransferForm',
+                'name': 'exp_month',
+                'enableAjaxValidation': true
+            }, {
+                'id': 'PayTransferForm_exp_year',
+                'inputID': 'PayTransferForm_exp_year',
+                'errorID': 'PayTransferForm_exp_year_em_',
+                'model': 'PayTransferForm',
+                'name': 'exp_year',
+                'enableAjaxValidation': true
+            }, {
+                'id': 'PayTransferForm_cvc2',
+                'inputID': 'PayTransferForm_cvc2',
+                'errorID': 'PayTransferForm_cvc2_em_',
+                'model': 'PayTransferForm',
+                'name': 'cvc2',
+                'enableAjaxValidation': true
+            }, {
+                'id': 'PayTransferForm_cvc2_rc',
+                'inputID': 'PayTransferForm_cvc2_rc',
+                'errorID': 'PayTransferForm_cvc2_rc_em_',
+                'model': 'PayTransferForm',
+                'name': 'cvc2_rc',
+                'enableAjaxValidation': true
+            }, {
+                'id': 'PayTransferForm_amount',
+                'inputID': 'PayTransferForm_amount',
+                'errorID': 'PayTransferForm_amount_em_',
+                'model': 'PayTransferForm',
+                'name': 'amount',
+                'enableAjaxValidation': true
+            }, {
+                'id': 'PayTransferForm_currency',
+                'inputID': 'PayTransferForm_currency',
+                'errorID': 'PayTransferForm_currency_em_',
+                'model': 'PayTransferForm',
+                'name': 'currency',
+                'enableAjaxValidation': true
+            }, {
+                'id': 'PayTransferForm_payment_to',
+                'inputID': 'PayTransferForm_payment_to',
+                'errorID': 'PayTransferForm_payment_to_em_',
+                'model': 'PayTransferForm',
+                'name': 'payment_to',
+                'enableAjaxValidation': true
+            }],
+            'focus': '#PayTransferForm_card',
+            'errorCss': 'error'
+        });
+    });
+    /*]]>*/
+</script>
+</body>
+</html>
