@@ -14,4 +14,7 @@ $(function(){
     $('.transferAmmount-commission').detach().insertAfter('.totalAmount');
     //Говнокод вселенского масштаба
     $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1">');
+
+    $('#PayTransferForm_payment_to').mask('0000 0000 0000 0000');
+    $('#PayTransferForm_card').mask('0000 0000 0000 0000');
 });

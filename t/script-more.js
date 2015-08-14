@@ -1,11 +1,3 @@
-// JavaScript Document
-
-$(function(){
-	// card number mask
-	$('#PayTransferForm_payment_to_stub').mask('0000 0000 0000 0000');
-});
-
-
 function form_update_bank_class(el)
 {
     var val = $(el).val().trim();

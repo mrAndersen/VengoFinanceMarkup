@@ -121,7 +121,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   color: #fff;
   font-size: 22rem;
   font-weight: 200;
-  margin: 35rem 0 0 92rem;
+  margin: 35rem 0 0 69rem;
   display: inline-block;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-numberInput {
@@ -139,7 +139,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   background-size: 100% 100%;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-numberInput input {
-  width: 352rem;
+  width: 358rem;
   font-size: 28rem;
   float: left;
   color: #83919e;
@@ -150,7 +150,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   font-weight: bold;
   margin: 66rem 32rem 0;
   border-radius: 4rem;
-  padding: 0 43rem;
+  padding: 0 40rem;
   text-align: center;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-expDivider {
@@ -196,12 +196,13 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   color: #83919e;
   display: block;
   height: 66rem;
+  font-size: 28rem;
   letter-spacing: 4rem;
   font-family: 'Robot', sans-serif;
   font-weight: bold;
   margin: 15.3rem 32rem 0;
   border-radius: 4rem;
-  padding: 0 43rem;
+  padding: 0 27rem;
   text-align: center;
   clear: both;
 }
