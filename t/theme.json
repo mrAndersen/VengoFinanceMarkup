@@ -4,7 +4,9 @@
     "_p2p.css"
   ],
   "jsFiles": [
-    "script.js"
+    "script.js",
+    "script-more.js",
+    "jquery.mask.min.js"
   ],
   "languageSwitcherStyle": "dropdown",
   "cvcRcSwitcherStyle": null,

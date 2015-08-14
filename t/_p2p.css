@@ -23,7 +23,10 @@ html body #page #mainBox #content #header,
 html body #page #mainBox #content #title,
 html body #page #mainBox #content #description,
 html body #page #mainBox #content #message,
-html body #page #mainBox #content #footer {
+html body #page #mainBox #content #footer,
+html body #page #mainBox #content .transferAmmount-helpText,
+html body #page #mainBox #content .transferAmmount-ammountLabel,
+html body #page #mainBox #content #transferTotalAmount {
   display: none;
 }
 html body #page #mainBox #content #transferBox {
@@ -41,6 +44,56 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE .tit
   font-size: 38rem;
   font-weight: 200;
   text-align: center;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .totalAmount {
+  width: 502rem;
+  margin: 0 auto;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .totalAmount .totalAmount-label {
+  display: block;
+  font-size: 22rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 25rem 0 0 0;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content #commission {
+  box-shadow: 0rem -11rem 20rem rgba(0, 0, 0, 0.2);
+  margin: 0 -69rem;
+  position: relative;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content #commission .transferAmmount-commissionLabel {
+  display: block;
+  font-size: 18rem;
+  color: #878787;
+  font-weight: 200;
+  position: absolute;
+  left: 50%;
+  width: 250rem;
+  margin: 0 0 0 -251rem;
+  top: 55rem;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content #commission #transferCommission {
+  display: block;
+  font-size: 18rem;
+  color: #878787;
+  font-weight: 200;
+  position: absolute;
+  left: 50%;
+  margin: 0 0 0 -40rem;
+  top: 55rem;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .transferAmmount .transferAmmount-ammount {
+  text-align: center;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .transferAmmount .transferAmmount-ammount input {
+  border: solid 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 4rem;
+  width: 422rem;
+  height: 84rem;
+  font-size: 28rem;
+  color: #444;
+  padding: 0 40rem;
+  margin: 36rem 0 0 0;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard {
   width: 502rem;
@@ -192,13 +245,28 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form #submitBox #agreeBox {
   display: none;
 }
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form #submitBox #proceedBox {
+  position: relative;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form #submitBox #proceedBox:after {
+  content: '';
+  position: absolute;
+  width: 224rem;
+  height: 49rem;
+  background: url('vengo-logo.png') center no-repeat;
+  background-size: 100% 100%;
+  left: 50%;
+  margin: 0 0 0 -112rem;
+  bottom: -110rem;
+}
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form #submitBox #proceedBox #send_button {
-  margin: 60rem auto;
+  margin: 60rem auto 190rem;
   font-size: 40rem;
   color: #fff;
   background-color: #f1365a;
   font-weight: 200;
-  width: 232rem;
-  padding: 27rem 134rem;
+  padding: 27rem 136rem;
   border-radius: 4rem;
+  display: block;
+  font-family: 'Robot', sans-serif;
 }
