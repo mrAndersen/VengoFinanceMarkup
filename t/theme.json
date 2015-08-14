@@ -5,7 +5,6 @@
   ],
   "jsFiles": [
     "script.js",
-    "script-more.js",
     "jquery.mask.min.js"
   ],
   "languageSwitcherStyle": "dropdown",
