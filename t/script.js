@@ -1,5 +1,29 @@
+function form_update_bank_class(el)
+{
+    if(el.getAttribute('id') == 'PayTransferForm_card'){
+        var firstIndex      = parseInt($(el).val().trim().substr(0,1));
+        var target          = $('.senderCard-numberInput');
+        var largetTarget    = $('.senderCard');
+
+        target.removeClass('visa master-card');
+        largetTarget.removeClass('visa master-card');
+
+        if(firstIndex == 4){
+            target.addClass('visa');
+            largetTarget.addClass('visa');
+        }
+
+        if(firstIndex == 5){
+            target.addClass('master-card');
+            largetTarget.addClass('master-card');
+        }
+    }
+}
+
 $(function(){
     //Неможко говнокода :)
+    $('.senderCard-numberInput').addClass('visa');
+    $('.senderCard').addClass('visa');
     $('#PAYTRANSFER_HEADER_ADAPTIVE').prepend('<div class="card-title">ВАША КАРТА</div>');
     $('#PAYTRANSFER_HEADER_ADAPTIVE').prepend('<div class="title">Отправить перевод</div>');
     $('#send_button').val('Продолжить');

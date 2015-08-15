@@ -98,10 +98,15 @@ html {
                   .senderCard{
                     width: 502rem;
                     height: 320rem;
-                    background: url('card-visa.png') center no-repeat;
                     border-radius: 4rem;
                     margin: 0 auto;
                     box-shadow: 0 30rem 35rem rgba(0,0,0,0.1);
+                    &.visa{
+                      background: url('card-visa.png') center no-repeat;
+                    }
+                    &.master-card{
+                      background: url('card-master.png') center no-repeat;
+                    }
                     .senderCard-numberLabel{
                       display: none;
                     }
@@ -132,9 +137,20 @@ html {
                         right: 32em;
                         width: 80rem;
                         height: 27rem;
-                        background: url('visa-logo.png') center no-repeat;
-                        background-size: 100% 100%;
                       }
+                      &.visa{
+                        &:before{
+                          background: url('visa-logo.png') center no-repeat;
+                          background-size: 100% 100%;
+                        }
+                      }
+                      &.master-card{
+                        &:before{
+                          background: url('mc-logo.png') center no-repeat;
+                          background-size: 100% 100%;
+                        }
+                      }
+
                       input{
                         width: 358rem;
                         font-size: 28rem;

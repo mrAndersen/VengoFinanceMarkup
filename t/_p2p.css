@@ -99,10 +99,15 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard {
   width: 502rem;
   height: 320rem;
-  background: url('card-visa.png') center no-repeat;
   border-radius: 4rem;
   margin: 0 auto;
   box-shadow: 0 30rem 35rem rgba(0, 0, 0, 0.1);
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard.visa {
+  background: url('card-visa.png') center no-repeat;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard.master-card {
+  background: url('card-master.png') center no-repeat;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-numberLabel {
   display: none;
@@ -135,7 +140,13 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   right: 32em;
   width: 80rem;
   height: 27rem;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-numberInput.visa:before {
   background: url('visa-logo.png') center no-repeat;
+  background-size: 100% 100%;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-numberInput.master-card:before {
+  background: url('mc-logo.png') center no-repeat;
   background-size: 100% 100%;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-numberInput input {
