@@ -272,3 +272,70 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   display: block;
   font-family: 'Robot', sans-serif;
 }
+html body .confirm {
+  margin: 0 69rem;
+  text-align: center;
+  display: none;
+}
+html body .confirm .confirm-title {
+  margin: 36rem auto 153rem;
+  font-size: 38rem;
+  font-weight: 200;
+}
+html body .confirm .hr {
+  width: 502rem;
+  height: 1px;
+  background-color: #979797;
+  margin: 69rem auto 82rem;
+}
+html body .confirm .confirm-message {
+  font-size: 18rem;
+  font-weight: 200;
+  color: #878787;
+  text-align: center;
+  width: 502rem;
+  margin: 0 auto;
+}
+html body .confirm .confirm-message a {
+  color: #4A90E2;
+  text-decoration: none;
+}
+html body .confirm .confirm-message a:visited,
+html body .confirm .confirm-message a:active {
+  color: #4A90E2;
+  text-decoration: none;
+}
+html body .confirm .transfer-cash {
+  margin: 90rem auto 125rem;
+  font-size: 40rem;
+  color: #fff;
+  background-color: #f1365a;
+  font-weight: 200;
+  padding: 27rem 151rem;
+  border-radius: 4rem;
+  display: inline-block;
+  font-family: 'Robot', sans-serif;
+}
+html body .confirm .logo {
+  width: 224rem;
+  height: 49rem;
+  margin: 0 auto 62rem;
+  background: url('vengo-logo.png') center no-repeat;
+  background-size: 100% 100%;
+}
+html body .confirm .pay-data {
+  width: 502rem;
+  margin: 0 auto;
+  font-size: 22rem;
+  font-weight: 200;
+}
+html body .confirm .pay-data tr td {
+  padding: 0 0 15rem 0;
+}
+html body .confirm .pay-data tr td:nth-child(1) {
+  text-transform: uppercase;
+  text-align: left;
+}
+html body .confirm .pay-data tr td:nth-child(2) {
+  text-align: right;
+}

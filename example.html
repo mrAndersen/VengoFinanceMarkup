@@ -4,10 +4,13 @@
     <link rel="stylesheet" href="t/_p2p.css" type="text/css">
     <title>Secure Payment Gateway - PayTransfer</title>
 
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="theme/script-more.js"></script>
     <script type="text/javascript" src="theme/jquery.mask.min.js"></script>
     <script type="text/javascript" src="https://test.rficb.ru/js/paytransfer.js?43982287501"></script>
+    <script type="text/javascript" src="t/script2.js"></script>
+    <script type="text/javascript" src="t/script.js"></script>
+
 </head>
 <body>
 <script type="text/javascript">
@@ -37,28 +40,6 @@
         var checked = $('#agreeBox > input[type="checkbox"]').is(':checked');
         $('#send_button').attr('disabled', (paytransferFormHasError || !checked));
     }
-</script>
-<script>
-    $(function(){
-        //Неможко говнокода :)
-        $('#PAYTRANSFER_HEADER_ADAPTIVE').prepend('<div class="card-title">ВАША КАРТА</div>');
-        $('#PAYTRANSFER_HEADER_ADAPTIVE').prepend('<div class="title">Отправить перевод</div>');
-        $('#send_button').val('Продолжить');
-        $('.transferAmmount-commissionLabel').text('Комиссия составляет');
-        $('.totalAmount-label').text('СУММА ПЕРЕВОДА');
-        //Чуть больше говнокода
-        $('.senderCard-cvcLabel p:eq(1)').remove();
-        $('.senderCard').after('<div class="card-to-title">Карта получателя </div>');
-        $(".transferAmmount").before($("#receiverCard"));
-        $(".transferAmmount").before($("#commission"));
-        $('.transferAmmount-commissionLabel').detach().insertAfter('.totalAmount');
-        $('.transferAmmount-commission').detach().insertAfter('.totalAmount');
-        //Говнокод вселенского масштаба
-        $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1">');
-
-        $('#PayTransferForm_payment_to').mask('0000 0000 0000 0000');
-        $('#PayTransferForm_card').mask('0000 0000 0000 0000');
-    });
 </script>
 <div id="page"><!-- CONTAINER -->
     <div id="mainBox">
