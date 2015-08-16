@@ -27,6 +27,88 @@ html {
           }
           #transferBox{
             margin: 0 69rem 73rem;
+            &.success{
+              margin: 0;
+              position: relative;
+              &:after{
+                content: '';
+                position: absolute;
+                width: 224rem;
+                height: 49rem;
+                background: url('vengo-logo.png') center no-repeat;
+                background-size: 100% 100%;
+                left: 50%;
+                margin: 0 0 0 -112rem;
+                bottom: -136rem;
+              }
+              #proceedBox form button{
+                margin: 60rem auto 190rem;
+                font-size: 40rem;
+                color: #fff;
+                background-color: #f1365a;
+                font-weight: 200;
+                padding: 27rem 136rem;
+                border-radius: 4rem;
+                display: block;
+                font-family: 'Robot', sans-serif;
+              }
+               > .content:nth-child(1){
+                margin: 146rem 69rem 70rem;
+                background: #fff;
+                text-align: center;
+                padding: 0 0 83rem 0;
+                position: relative;
+                box-shadow: 0 30rem 35rem rgba(0,0,0,0.1);
+                &:after{
+                  content: '';
+                  width: 100%;
+                  height: 12px;
+                  background: url("check.png") left repeat-x;
+                  bottom: -12px;
+                  left: -1px;
+                  position: absolute;
+                }
+                .true-sum{
+                  margin: 0 36rem;
+                  border: dashed #979797;
+                  border-width: 1px 0 1px 0;
+                  padding: 20rem 0;
+                  .legend{
+                    width: 50%;
+                    font-size: 36rem;
+                    text-align: left;
+                    font-weight: 200;
+                    float:left
+                  }
+                  .sum{
+                    width: 50%;
+                    float: right;
+                    text-align: right;
+                    color: rgb(241,54,90);
+                    font-size: 36rem;
+                    font-weight: 500;
+                  }
+                }
+                h4{
+                  font-size: 37rem;
+                  font-weight: 500;
+                  margin: 54rem 74rem;
+                  display: inline-block;
+                }
+                .col{
+                  margin: 35rem;
+                  text-align: left;
+                  p{
+                    font-size: 22rem;
+                    font-weight: 200;
+                    b{
+                      font-weight: 200;
+                    }
+                  }
+                }
+              }
+            }
+
             #PAYTRANSFER_HEADER_ADAPTIVE{
               .card-title{
                 font-size: 30rem;
