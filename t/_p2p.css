@@ -117,6 +117,36 @@ html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .
 html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .col p b {
   font-weight: 200;
 }
+html body #page #mainBox #content #transferBox.fail .content {
+  position: relative;
+}
+html body #page #mainBox #content #transferBox.fail .content h4 {
+  font-size: 22rem;
+  font-weight: 200;
+  text-align: Center;
+  text-transform: uppercase;
+  margin: 385rem 0 0 0;
+}
+html body #page #mainBox #content #transferBox.fail .content h4:before {
+  content: ":(";
+  font-size: 120rem;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  margin: 0 0 0 -40rem;
+  bottom: 90rem;
+}
+html body #page #mainBox #content #transferBox.fail .content h4:after {
+  content: '';
+  position: absolute;
+  width: 224rem;
+  height: 49rem;
+  background: url('vengo-logo.png') center no-repeat;
+  background-size: 100% 100%;
+  left: 50%;
+  margin: 0 0 0 -112rem;
+  bottom: -480rem;
+}
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE .card-title {
   font-size: 30rem;
   font-weight: 500;
