@@ -8,14 +8,12 @@ function form_update_bank_class(el)
         target.removeClass('visa master-card');
         largetTarget.removeClass('visa master-card');
 
-        if(firstIndex == 4){
-            target.addClass('visa');
-            largetTarget.addClass('visa');
-        }
-
         if(firstIndex == 5){
             target.addClass('master-card');
             largetTarget.addClass('master-card');
+        }else{
+            target.addClass('visa');
+            largetTarget.addClass('visa');
         }
     }
 }
@@ -98,17 +96,19 @@ $(function(){
 
 
     $('#payment-form').submit(function(e){
-        e.preventDefault();
+        if(!paytransferFormHasError){
+            e.preventDefault();
 
-        $('.card-sender-number').text("**** " + $('#PayTransferForm_card').val().split(' ')[3]);
-        $('.card-receiver-number').text("**** " + $('#PayTransferForm_payment_to').val().split(' ')[3]);
-        $('.transfer-sum').text($('#PayTransferForm_amount').val());
-        $('.transfer-commission').text($('#transferCommission').text());
-        $('.transfer-total').text($('#transferTotalAmount').text());
+            $('.card-sender-number').text("**** " + $('#PayTransferForm_card').val().split(' ')[3]);
+            $('.card-receiver-number').text("**** " + $('#PayTransferForm_payment_to').val().split(' ')[3]);
+            $('.transfer-sum').text($('#PayTransferForm_amount').val());
+            $('.transfer-commission').text($('#transferCommission').text());
+            $('.transfer-total').text($('#transferTotalAmount').text());
 
 
-        $('.confirm').show();
-        $('#page').hide();
+            $('.confirm').show();
+            $('#page').hide();
+        }
     });
 
     $('#agreeBox input[type="checkbox"]').trigger('click');
