@@ -20,6 +20,20 @@ function form_update_bank_class(el)
     }
 }
 
+function isValidForm()
+{
+    var validity = true;
+    var targets = $('#PayTransferForm_card, #PayTransferForm_exp_month, #PayTransferForm_exp_year, #PayTransferForm_cvc2, #PayTransferForm_payment_to, #PayTransferForm_amount');
+
+    targets.each(function(k,v){
+        if(v.value == ''){
+            validity = false;
+        }
+    });
+
+    return validity;
+}
+
 $(function(){
     //Неможко говнокода :)
     $('.senderCard-numberInput').addClass('visa');
@@ -100,15 +114,17 @@ $(function(){
     $('#payment-form').submit(function(e){
         e.preventDefault();
 
-        $('.card-sender-number').text("**** " + $('#PayTransferForm_card').val().split(' ')[3]);
-        $('.card-receiver-number').text("**** " + $('#PayTransferForm_payment_to').val().split(' ')[3]);
-        $('.transfer-sum').text($('#PayTransferForm_amount').val());
-        $('.transfer-commission').text($('#transferCommission').text());
-        $('.transfer-total').text($('#transferTotalAmount').text());
+        if(isValidForm()){
+            $('.card-sender-number').text("**** " + $('#PayTransferForm_card').val().split(' ')[3]);
+            $('.card-receiver-number').text("**** " + $('#PayTransferForm_payment_to').val().split(' ')[3]);
+            $('.transfer-sum').text($('#PayTransferForm_amount').val());
+            $('.transfer-commission').text($('#transferCommission').text());
+            $('.transfer-total').text($('#transferTotalAmount').text());
 
 
-        $('.confirm').show();
-        $('#page').hide();
+            $('.confirm').show();
+            $('#page').hide();
+        }
     });
 
     $('#agreeBox input[type="checkbox"]').trigger('click');
