@@ -402,6 +402,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   font-family: 'Robot', sans-serif;
   box-shadow: none;
   outline: none;
+  -webkit-appearance: none;
 }
 html body .confirm {
   margin: 0 69rem;
