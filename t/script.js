@@ -8,14 +8,12 @@ function form_update_bank_class(el)
         target.removeClass('visa master-card');
         largetTarget.removeClass('visa master-card');
 
-        if(firstIndex == 4){
-            target.addClass('visa');
-            largetTarget.addClass('visa');
-        }
-
         if(firstIndex == 5){
             target.addClass('master-card');
             largetTarget.addClass('master-card');
+        }else{
+            target.addClass('visa');
+            largetTarget.addClass('visa');
         }
     }
 }

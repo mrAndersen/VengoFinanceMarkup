@@ -296,6 +296,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   text-align: center;
   clear: both;
   font-size: 28rem;
+  width: 90rem;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-expYear {
   float: left;
@@ -312,6 +313,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   text-align: center;
   clear: both;
   font-size: 28rem;
+  width: 90rem;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-cvcInput {
   float: right;
