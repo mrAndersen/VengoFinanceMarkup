@@ -125,8 +125,6 @@ $(function(){
         }
     });
 
-    $('#agreeBox input[type="checkbox"]').trigger('click');
-
     $(document).on('click','.transfer-cash',function(e){
         e.preventDefault();
         $('#payment-form').submit();
