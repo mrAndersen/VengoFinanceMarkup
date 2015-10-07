@@ -146,6 +146,13 @@ html body #page #mainBox #content #transferBox.fail .content h4:after {
   margin: 0 0 0 -112rem;
   bottom: -380rem;
 }
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE #PayTransferForm_card_em_,
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE #PayTransferForm_cvc2_em_,
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE #PayTransferForm_cvc2_em_,
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE #PayTransferForm_payment_to_em_ {
+  display: none;
+  visibility: hidden;
+}
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE .card-title {
   font-size: 30rem;
   font-weight: 500;
@@ -373,6 +380,13 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form #submitBox #agreeBox {
   display: none;
 }
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form #submitBox .vengo-errors {
+  font-size: 24rem;
+  color: darkred;
+  margin: 20rem 0 0 0;
+  text-align: center;
+  visibility: hidden;
+}
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form #submitBox #proceedBox {
   position: relative;
   margin: 0 auto;
@@ -391,7 +405,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form #submitBox #proceedBox #send_button,
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form #submitBox #proceedBox #send_button:disabled {
-  margin: 60rem auto 60rem;
+  margin: 40rem auto 60rem;
   font-size: 40rem;
   color: #fff;
   background-color: #f1365a;

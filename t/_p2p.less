@@ -146,6 +146,10 @@ html {
             }
 
             #PAYTRANSFER_HEADER_ADAPTIVE{
+              #PayTransferForm_card_em_, #PayTransferForm_cvc2_em_, #PayTransferForm_cvc2_em_, #PayTransferForm_payment_to_em_{
+                display: none;
+                visibility: hidden;
+              }
               .card-title{
                 font-size: 30rem;
                 font-weight: 500;
@@ -387,6 +391,13 @@ html {
                   #agreeBox{
                     display: none;
                   }
+                  .vengo-errors{
+                    font-size: 24rem;
+                    color: darkred;
+                    margin: 20rem 0 0 0;
+                    text-align: center;
+                    visibility: hidden;
+                  }
                   #proceedBox{
                     position: relative;
                     margin: 0 auto;
@@ -403,7 +414,7 @@ html {
                       bottom: -60rem;
                     }
                     #send_button, #send_button:disabled{
-                      margin: 60rem auto 60rem;
+                      margin: 40rem auto 60rem;
                       font-size: 40rem;
                       color: #fff;
                       background-color: #f1365a;
