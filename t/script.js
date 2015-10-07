@@ -22,6 +22,7 @@ function isValidForm()
 {
     var validity = true;
     var targets = $('#PayTransferForm_card, #PayTransferForm_exp_month, #PayTransferForm_exp_year, #PayTransferForm_cvc2, #PayTransferForm_payment_to, #PayTransferForm_amount');
+    var targets2 = $('#PayTransferForm_card_em_, #PayTransferForm_cvc2_em_, #PayTransferForm_cvc2_em_, #PayTransferForm_payment_to_em_');
 
     targets.each(function(k,v){
         if(v.value == ''){
@@ -29,21 +30,13 @@ function isValidForm()
         }
     });
 
-    return validity;
-}
-
-function hasNativeErrors()
-{
-    var hasErrors = false;
-    var targets = $('#PayTransferForm_card_em_, #PayTransferForm_cvc2_em_, #PayTransferForm_cvc2_em_, #PayTransferForm_payment_to_em_');
-
-    targets.each(function(k,v){
+    targets2.each(function(k,v){
         if(v.text != ''){
-            hasErrors = true;
+            validity = false;
         }
     });
 
-    return hasErrors;
+    return validity;
 }
 
 $(function(){
@@ -127,7 +120,7 @@ $(function(){
     $('#payment-form').submit(function(e){
         e.preventDefault();
 
-        if(isValidForm() && !hasNativeErrors()){
+        if(isValidForm()){
             $('.card-sender-number').text("**** " + $('#PayTransferForm_card').val().split(' ')[3]);
             $('.card-receiver-number').text("**** " + $('#PayTransferForm_payment_to').val().split(' ')[3]);
             $('.transfer-sum').text($('#PayTransferForm_amount').val());
@@ -139,6 +132,7 @@ $(function(){
             $('#page').hide();
         }else{
             $('.vengo-errors').show();
+            $('.vengo-errors').css('visibility','visible');
         }
     });
 
