@@ -82,7 +82,10 @@ $(function(){
             e.preventDefault();
 
             $('.vengo-errors').show();
-            $('.vengo-errors').css('visibility','visible').delay(3500).css('visibility','hidden');
+            $('.vengo-errors').css('visibility','visible').delay(3500).queue(function(next){
+                $(this).css('visibility','hidden');
+                next();
+            });
         }
     });
 
