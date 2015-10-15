@@ -31,7 +31,7 @@ function isValidForm()
     });
 
     targets2.each(function(k,v){
-        if(v.text != ''){
+        if(v.innerHTML != ''){
             validity = false;
         }
     });
@@ -82,7 +82,7 @@ $(function(){
             e.preventDefault();
 
             $('.vengo-errors').show();
-            $('.vengo-errors').css('visibility','visible').delay(1000).fadeOut(500);
+            $('.vengo-errors').css('visibility','visible').delay(3500).css('visibility','hidden');
         }
     });
 
