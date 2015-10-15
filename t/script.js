@@ -73,63 +73,12 @@ $(function(){
     $('.true-sum .sum').text($('#transferBox.success .content .col:last p:nth-child(2)').text().trim());
     $('#transferBox.success #proceedBox form button').text('Завершить');
 
-
-    var strVar="";
-    strVar += "<div class=\"confirm\">";
-    strVar += "    <div class=\"confirm-title\">";
-    strVar += "        Подтверждение";
-    strVar += "    <\/div>";
-    strVar += "    <table class=\"pay-data\">";
-    strVar += "        <tr>";
-    strVar += "            <td>Карта отправителя<\/td>";
-    strVar += "            <td class=\"card-sender-number\"><\/td>";
-    strVar += "        <\/tr>";
-    strVar += "        <tr>";
-    strVar += "            <td>Карта получателя<\/td>";
-    strVar += "            <td class=\"card-receiver-number\"><\/td>";
-    strVar += "        <\/tr>";
-    strVar += "        <tr>";
-    strVar += "            <td>Сумма перевода<\/td>";
-    strVar += "            <td class=\"transfer-sum\"><\/td>";
-    strVar += "        <\/tr>";
-    strVar += "        <tr>";
-    strVar += "            <td>Комиссия<\/td>";
-    strVar += "            <td class=\"transfer-commission\"><\/td>";
-    strVar += "        <\/tr>";
-    strVar += "        <tr>";
-    strVar += "            <td>Итого<\/td>";
-    strVar += "            <td class=\"transfer-total\"><\/td>";
-    strVar += "        <\/tr>";
-    strVar += "    <\/table>";
-    strVar += "    <div class=\"hr\"><\/div>";
-    strVar += "    <div class=\"confirm-message\">";
-    strVar += "        Нажимая на кнопку, я соглашаюсь<br>";
-    strVar += "        <a target=\"_blank\" href=\"http://rfibank.ru/upload/docs/P2Prules.pdf\">с условиями использования сервиса<\/a>";
-    strVar += "    <\/div>";
-    strVar += "    <div class=\"transfer-cash\">";
-    strVar += "        Перевести";
-    strVar += "    <\/div>";
-    strVar += "";
-    strVar += "    <div class=\"logo\"><\/div>";
-    strVar += "<\/div>";
-
-    $('body').append(strVar);
     $('#submitBox .content').prepend('<div class="vengo-errors">Не все поля заполнены корректно</div>');
 
 
     $('#payment-form').submit(function(e){
-        e.preventDefault();
-
-        if(isValidForm()){
-            $('.card-sender-number').text("**** " + $('#PayTransferForm_card').val().split(' ')[3]);
-            $('.card-receiver-number').text("**** " + $('#PayTransferForm_payment_to').val().split(' ')[3]);
-            $('.transfer-sum').text($('#PayTransferForm_amount').val());
-            $('.transfer-commission').text($('#transferCommission').text());
-            $('.transfer-total').text($('#transferTotalAmount').text());
-
-
-            $('.confirm').show();
-            $('#page').hide();
+        if(!isValidForm()){
+            e.preventDefault();
         }else{
             $('.vengo-errors').show();
             $('.vengo-errors').css('visibility','visible');
