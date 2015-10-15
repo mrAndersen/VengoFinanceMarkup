@@ -77,9 +77,10 @@ $(function(){
 
 
     $('#payment-form').submit(function(e){
+
         if(!isValidForm()){
             e.preventDefault();
-        }else{
+
             $('.vengo-errors').show();
             $('.vengo-errors').css('visibility','visible');
         }
