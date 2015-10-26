@@ -79,7 +79,13 @@ $(function(){
 
     var targets = $('#PayTransferForm_card, #PayTransferForm_exp_month, #PayTransferForm_exp_year, #PayTransferForm_cvc2, #PayTransferForm_payment_to, #PayTransferForm_amount');
     targets.each(function(k,v){
-        v.attr('pattern','\/d*');
+        $(this).attr('pattern','\/d*');
+    });
+
+    $('input').keyup(function(){
+        if(this.value.length == $(this).attr("maxlength") && $(this).attr('maxlength') != undefined){
+            $(this).next().focus();
+        }
     });
 
 
