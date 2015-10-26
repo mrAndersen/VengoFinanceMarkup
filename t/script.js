@@ -77,6 +77,12 @@ $(function(){
     $('#submitBox .content').prepend('<div class="vengo-errors">Не все поля заполнены корректно</div>');
 
 
+    var targets = $('#PayTransferForm_card, #PayTransferForm_exp_month, #PayTransferForm_exp_year, #PayTransferForm_cvc2, #PayTransferForm_payment_to, #PayTransferForm_amount');
+    targets.each(function(k,v){
+        v.attr('pattern','\/d*');
+    });
+
+
     $('#payment-form').submit(function(e){
 
         if(!isValidForm()){
