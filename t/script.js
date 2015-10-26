@@ -31,6 +31,7 @@ function isValidForm()
     });
 
     targets2.each(function(k,v){
+        console.log(v.innerHTML);
         if(v.innerHTML != ''){
             validity = false;
         }
