@@ -160,13 +160,6 @@ html body #page #mainBox #content #transferBox.fail .content h4:after {
   margin: 0 0 0 -112rem;
   bottom: -380rem;
 }
-html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE #PayTransferForm_card_em_,
-html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE #PayTransferForm_cvc2_em_,
-html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE #PayTransferForm_cvc2_em_,
-html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE #PayTransferForm_payment_to_em_ {
-  display: none;
-  visibility: hidden;
-}
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE .card-title {
   font-size: 30rem;
   font-weight: 500;

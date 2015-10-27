@@ -32,7 +32,7 @@ function isValidForm()
 
     targets2.each(function(k,v){
         console.log(v.innerHTML);
-        if(v.innerHTML != ''){
+        if(v.innerHTML != '' && $(v).css('display') != 'none'){
             validity = false;
         }
     });
@@ -81,6 +81,8 @@ $(function(){
             $(this).next().focus();
         }
     });
+
+    $( "div[id*='em']").css('visibility','hidden').css('height','0px');
 
 
     $('#payment-form').submit(function(e){
