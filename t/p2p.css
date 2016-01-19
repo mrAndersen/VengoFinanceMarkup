@@ -6,7 +6,7 @@
 html {
   font-family: 'Roboto', sans-serif;
   background: #f5f5f5;
-  font-size: 1px;
+  font-size: 20px;
   font-weight: 500;
 }
 @media all and (max-width: 640px) {
