@@ -210,6 +210,14 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   margin: 0 0 0 -40rem;
   top: 55rem;
 }
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .transferAmmount .transferAmmount-ammountLimits {
+  font-size: 18rem;
+  margin: 20rem auto;
+  width: 500rem;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .transferAmmount .transferAmmount-ammountLimits ul {
+  list-style: none;
+}
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .transferAmmount .transferAmmount-ammount {
   text-align: center;
 }

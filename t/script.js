@@ -74,7 +74,9 @@ $(function(){
     $('.true-sum .sum').text($('#transferBox.success .content .col:last p:nth-child(2)').text().trim());
     $('#transferBox.success #proceedBox form button').text('Завершить');
 
-    $('#submitBox .content').prepend('<div class="vengo-errors">Не все поля заполнены корректно</div>');
+    if($('#PayTransferForm_card').length > 0){
+        $('#submitBox .content').prepend('<div class="vengo-errors">Не все поля заполнены корректно</div>');
+    }
 
     $('input').keyup(function(){
         if(this.value.length == $(this).attr("maxlength") && $(this).attr('maxlength') != undefined){
