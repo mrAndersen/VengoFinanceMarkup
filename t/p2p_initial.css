@@ -225,7 +225,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   border: solid 1rem rgba(0, 0, 0, 0.1);
   border-radius: 4rem;
   width: 422rem;
-  height: 84rem;
+  height: 89rem;
   font-size: 28rem;
   color: #444;
   padding: 0 40rem;
@@ -271,7 +271,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-numberInput:before {
   content: '';
   position: absolute;
-  top: 25.8rem;
+  top: 26rem;
   right: 32em;
   width: 80rem;
   height: 27rem;
@@ -330,7 +330,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   letter-spacing: 4rem;
   font-family: 'Robot', sans-serif;
   font-weight: bold;
-  margin: 15.3rem 0 0 2rem;
+  margin: 15rem 0 0 2rem;
   border-radius: 4rem;
   text-align: center;
   clear: both;
@@ -348,7 +348,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   letter-spacing: 4rem;
   font-family: 'Robot', sans-serif;
   font-weight: bold;
-  margin: 15.3rem 32rem 0;
+  margin: 15rem 32rem 0;
   border-radius: 4rem;
   text-align: center;
   clear: both;

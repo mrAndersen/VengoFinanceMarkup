@@ -1,6 +1,6 @@
 <?php
 
-$string     = file_get_contents('_p2p.less');
+$string     = file_get_contents('t/_p2p.less');
 
 
 while(substr_count($string,'rem') != 0){
@@ -24,10 +24,14 @@ while(substr_count($string,'rem') != 0){
     $nStart = end($keys);
 
     $number = implode('',array_reverse($numberResolution));
-    $newNumber = round($number / 20,1);
+    $newNumber = round($number / 20,2);
 
-    $string = str_replace($number.'rem',$newNumber.'mer',$string);
+    $source = '/' . $number.'rem' . '/';
+    $string = preg_replace($source,$newNumber.'mer', $string, 1);
 }
+$string = str_replace('mer','rem',$string);
+
+file_put_contents('t/new.less',$string);
 
 header('Content-type: text/css');
 echo($string);

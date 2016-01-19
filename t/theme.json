@@ -1,7 +1,7 @@
 {
   "name": "vengo_finance_mobile",
   "cssFiles": [
-    "_p2p.css"
+    "p2p.css"
   ],
   "jsFiles": [
     "script.js",

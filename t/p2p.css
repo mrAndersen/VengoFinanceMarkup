@@ -44,7 +44,7 @@ html body #page #mainBox #content #transferTotalAmount {
   display: none;
 }
 html body #page #mainBox #content #transferBox {
-  margin: 0 3.5rem 3.7rem;
+  margin: 0 3.45rem 3.65rem;
 }
 html body #page #mainBox #content #transferBox.success {
   margin: 0;
@@ -54,7 +54,7 @@ html body #page #mainBox #content #transferBox.success:after {
   content: '';
   position: absolute;
   width: 11.2rem;
-  height: 2.5rem;
+  height: 2.45rem;
   background: url('vengo-logo.png') center no-repeat;
   background-size: 100% 100%;
   left: 50%;
@@ -70,18 +70,18 @@ html body #page #mainBox #content #transferBox.success #proceedBox form button {
   color: #fff;
   background-color: #f1365a;
   font-weight: 200;
-  padding: 1.4rem 6.8rem;
+  padding: 1.35rem 6.8rem;
   border-radius: 0.2rem;
   display: inline-block;
   font-family: 'Robot', sans-serif;
 }
 html body #page #mainBox #content #transferBox.success > .content:nth-child(1) {
-  margin: 7.3rem 3.5rem 3.5rem;
+  margin: 7.3rem 3.45rem 3.5rem;
   background: #fff;
   text-align: center;
-  padding: 0 0 4.2rem 0;
+  padding: 0 0 4.15rem 0;
   position: relative;
-  box-shadow: 0 1.5rem 1.8rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1.5rem 1.75rem rgba(0, 0, 0, 0.1);
 }
 html body #page #mainBox #content #transferBox.success > .content:nth-child(1):after {
   content: '';
@@ -114,13 +114,13 @@ html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .
   font-weight: 500;
 }
 html body #page #mainBox #content #transferBox.success > .content:nth-child(1) h4 {
-  font-size: 1.9rem;
+  font-size: 1.85rem;
   font-weight: 500;
-  margin: 50.2rem 70.2rem;
+  margin: 2.7rem 3.7rem;
   display: inline-block;
 }
 html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .col {
-  margin: 1.8rem;
+  margin: 1.75rem;
   text-align: left;
 }
 html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .col p {
@@ -138,11 +138,11 @@ html body #page #mainBox #content #transferBox.fail .content h4 {
   font-weight: 200;
   text-align: Center;
   text-transform: uppercase;
-  margin: 19.3rem 0 0 0;
+  margin: 19.25rem 0 0 0;
 }
 html body #page #mainBox #content #transferBox.fail .content h4:before {
   content: ":(";
-  font-size: 11rem;
+  font-size: 6rem;
   font-weight: 600;
   position: absolute;
   left: 50%;
@@ -153,7 +153,7 @@ html body #page #mainBox #content #transferBox.fail .content h4:after {
   content: '';
   position: absolute;
   width: 11.2rem;
-  height: 2.5rem;
+  height: 2.45rem;
   background: url('vengo-logo.png') center no-repeat;
   background-size: 100% 100%;
   left: 50%;
@@ -163,7 +163,7 @@ html body #page #mainBox #content #transferBox.fail .content h4:after {
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE .card-title {
   font-size: 1.5rem;
   font-weight: 500;
-  margin: 2.3rem auto 20.2rem;
+  margin: 2.3rem auto 1.2rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -182,11 +182,11 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   font-size: 1.1rem;
   font-weight: 200;
   text-transform: uppercase;
-  padding: 1.3rem 0 0 0;
+  padding: 1.25rem 0 0 0;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content #commission {
-  box-shadow: 0rem -0.9rem 1rem rgba(0, 0, 0, 0.2);
-  margin: 0 -3.5rem;
+  box-shadow: 0rem -0.85rem 1rem rgba(0, 0, 0, 0.2);
+  margin: 0 -3.45rem;
   position: relative;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content #commission .transferAmmount-commissionLabel {
@@ -196,9 +196,9 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   font-weight: 200;
   position: absolute;
   left: 50%;
-  width: 250rem;
-  margin: 0 0 0 -12.6rem;
-  top: 2.8rem;
+  width: 12.5rem;
+  margin: 0 0 0 -12.55rem;
+  top: 2.75rem;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content #commission #transferCommission {
   display: block;
@@ -208,12 +208,12 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   position: absolute;
   left: 50%;
   margin: 0 0 0 -2rem;
-  top: 2.8rem;
+  top: 2.75rem;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .transferAmmount .transferAmmount-ammountLimits {
   font-size: 0.9rem;
   margin: 1rem auto;
-  width: 500rem;
+  width: 25rem;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .transferAmmount .transferAmmount-ammountLimits ul {
   list-style: none;
@@ -222,10 +222,10 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   text-align: center;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .transferAmmount .transferAmmount-ammount input {
-  border: solid 0.1rem rgba(0, 0, 0, 0.1);
+  border: solid 0.05rem rgba(0, 0, 0, 0.1);
   border-radius: 0.2rem;
-  width: 41.1rem;
-  height: 80.2rem;
+  width: 21.1rem;
+  height: 4.45rem;
   font-size: 1.4rem;
   color: #444;
   padding: 0 2rem;
@@ -233,10 +233,10 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard {
   width: 25.1rem;
-  height: 31rem;
+  height: 16rem;
   border-radius: 0.2rem;
   margin: 0 auto;
-  box-shadow: 0 1.5rem 1.8rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1.5rem 1.75rem rgba(0, 0, 0, 0.1);
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard.visa {
   background: url('card-visa.png') center no-repeat;
@@ -252,7 +252,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   color: #fff;
   font-size: 1.1rem;
   font-weight: 200;
-  margin: 1.8rem 1.6rem 0;
+  margin: 1.75rem 1.6rem 0;
   display: inline-block;
   float: left;
 }
@@ -261,7 +261,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   color: #fff;
   font-size: 1.1rem;
   font-weight: 200;
-  margin: 1.8rem 0 0 5rem;
+  margin: 1.75rem 0 0 4.95rem;
   display: inline-block;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-numberInput {
@@ -272,9 +272,9 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   content: '';
   position: absolute;
   top: 1.3rem;
-  right: 32em;
-  width: 80rem;
-  height: 1.4rem;
+  right: 2em;
+  width: 4rem;
+  height: 1.35rem;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-numberInput.visa:before {
   background: url('visa-logo.png') center no-repeat;
@@ -313,7 +313,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   letter-spacing: 0.2rem;
   font-family: 'Robot', sans-serif;
   font-weight: bold;
-  margin: 0.8rem 0 0 1.6rem;
+  margin: 0.77rem 0 0 1.6rem;
   border-radius: 0.2rem;
   text-align: center;
   clear: both;
@@ -330,7 +330,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   letter-spacing: 0.2rem;
   font-family: 'Robot', sans-serif;
   font-weight: bold;
-  margin: 0.8rem 0 0 0.1rem;
+  margin: 0.75rem 0 0 0.1rem;
   border-radius: 0.2rem;
   text-align: center;
   clear: both;
@@ -348,22 +348,22 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   letter-spacing: 0.2rem;
   font-family: 'Robot', sans-serif;
   font-weight: bold;
-  margin: 0.8rem 1.6rem 0;
+  margin: 0.75rem 1.6rem 0;
   border-radius: 0.2rem;
   text-align: center;
   clear: both;
-  width: 11rem;
+  width: 6rem;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .card-to-title {
   font-size: 1.5rem;
   font-weight: 500;
-  margin: 50.2rem auto 20.2rem;
+  margin: 2.7rem auto 1.2rem;
   text-align: center;
   text-transform: uppercase;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content #receiverCard {
   width: 25.1rem;
-  height: 13.4rem;
+  height: 8.4rem;
   background: #34495e;
   color: #fff;
   margin: 0 auto;
@@ -374,7 +374,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   color: #fff;
   font-size: 1.1rem;
   font-weight: 200;
-  margin: 1.3rem 1.6rem 0.8rem;
+  margin: 1.25rem 1.6rem 0.8rem;
   display: block;
   float: left;
 }
@@ -387,16 +387,16 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   font-weight: bold;
   margin: 0 1.6rem;
   border-radius: 0.2rem;
-  padding: 0 2.2rem;
+  padding: 0 2.15rem;
   text-align: center;
-  width: 350.1rem;
+  width: 17.6rem;
   font-size: 1.4rem;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form #submitBox #agreeBox {
   display: none;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form #submitBox .vengo-errors {
-  font-size: 20.2rem;
+  font-size: 1.2rem;
   color: darkred;
   margin: 1rem 0 0 0;
   text-align: center;
@@ -411,7 +411,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   content: '';
   position: absolute;
   width: 11.2rem;
-  height: 2.5rem;
+  height: 2.45rem;
   background: url('vengo-logo.png') center no-repeat;
   background-size: 100% 100%;
   left: 50%;
@@ -425,7 +425,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   color: #fff;
   background-color: #f1365a;
   font-weight: 200;
-  padding: 1.4rem 6.8rem;
+  padding: 1.35rem 6.8rem;
   border-radius: 0.2rem;
   display: inline-block;
   font-family: 'Robot', sans-serif;
@@ -434,12 +434,12 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   -webkit-appearance: none;
 }
 html body .confirm {
-  margin: 0 3.5rem;
+  margin: 0 3.45rem;
   text-align: center;
   display: none;
 }
 html body .confirm .confirm-title {
-  margin: 1.8rem auto 7.7rem;
+  margin: 1.8rem auto 7.65rem;
   font-size: 1.9rem;
   font-weight: 200;
 }
@@ -447,7 +447,7 @@ html body .confirm .hr {
   width: 25.1rem;
   height: 1px;
   background-color: #979797;
-  margin: 3.5rem auto 80.1rem;
+  margin: 3.45rem auto 4.1rem;
 }
 html body .confirm .confirm-message {
   font-size: 0.9rem;
@@ -467,20 +467,20 @@ html body .confirm .confirm-message a:active {
   text-decoration: none;
 }
 html body .confirm .transfer-cash {
-  margin: 4.5rem auto 11.3rem;
+  margin: 4.5rem auto 6.25rem;
   font-size: 2rem;
   color: #fff;
   background-color: #f1365a;
   font-weight: 200;
-  padding: 1.4rem 150.1rem;
+  padding: 1.35rem 7.55rem;
   border-radius: 0.2rem;
   display: inline-block;
   font-family: 'Robot', sans-serif;
 }
 html body .confirm .logo {
   width: 11.2rem;
-  height: 2.5rem;
-  margin: 0 auto 60.1rem;
+  height: 2.45rem;
+  margin: 0 auto 3.1rem;
   background: url('vengo-logo.png') center no-repeat;
   background-size: 100% 100%;
 }
@@ -491,7 +491,7 @@ html body .confirm .pay-data {
   font-weight: 200;
 }
 html body .confirm .pay-data tr td {
-  padding: 0 0 0.8rem 0;
+  padding: 0 0 0.75rem 0;
 }
 html body .confirm .pay-data tr td:nth-child(1) {
   text-transform: uppercase;
