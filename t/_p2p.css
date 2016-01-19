@@ -261,7 +261,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   color: #fff;
   font-size: 22rem;
   font-weight: 200;
-  margin: 35rem 0 0 69rem;
+  margin: 35rem 0 0 99rem;
   display: inline-block;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .senderCard .senderCard-numberInput {
@@ -350,9 +350,9 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   font-weight: bold;
   margin: 15.3rem 32rem 0;
   border-radius: 4rem;
-  padding: 0 27rem;
   text-align: center;
   clear: both;
+  width: 120rem;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content .card-to-title {
   font-size: 30rem;
