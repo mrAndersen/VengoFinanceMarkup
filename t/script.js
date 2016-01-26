@@ -63,15 +63,42 @@ $(function(){
     $('#PayTransferForm_card').mask('0000 0000 0000 0000');
 
     $('#transferBox.success h4').text('Перевод отправлен');
-    $('#transferBox.success .content:first').append('<div class="true-sum"><div class="legend">Сумма</div><div class="sum"></div><div class="spacer" style="clear: both;"></div></div>');
+    $('#transferBox.success .content:first').append('' +
+    '<div class="true-sum">' +
+        '<div class="legend">Сумма</div>' +
+        '<div class="sum"></div>' +
+        '<div class="spacer" style="clear: both;"></div>' +
+    '</div>');
+
+    $('#transferBox.success .content:first').append('' +
+    '<div class="tr-id">' +
+        '<div class="legend">ID Транзакции</div>' +
+        '<div class="tr-id-value"></div>' +
+        '<div class="spacer" style="clear: both;"></div>' +
+    '</div>');
+
+    $('#transferBox.success .content:first').append('' +
+    '<div class="order-id">' +
+        '<div class="legend">ID заказа</div>' +
+        '<div class="order-id-value"></div>' +
+        '<div class="spacer" style="clear: both;"></div>' +
+    '</div>');
 
     $('#transferBox.success .content .col:last p:nth-child(2) b').remove();
     $('#transferBox.success .content .col:last p:nth-child(2)').hide();
+
+    $('#transferBox.success .content .col:last p:nth-child(3) b').remove();
     $('#transferBox.success .content .col:last p:nth-child(3)').hide();
+
+    $('#transferBox.success .content .col:last p:nth-child(4) b').remove();
     $('#transferBox.success .content .col:last p:nth-child(4)').hide();
 
 
     $('.true-sum .sum').text($('#transferBox.success .content .col:last p:nth-child(2)').text().trim());
+    $('.order-id-value').text($('#transferBox.success .content .col:last p:nth-child(3)').text().trim());
+    $('.tr-id-value').text($('#transferBox.success .content .col:last p:nth-child(4)').text().trim());
+
+
     $('#transferBox.success #proceedBox form button').text('Завершить');
 
     if($('#PayTransferForm_card').length > 0){

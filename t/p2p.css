@@ -92,20 +92,32 @@ html body #page #mainBox #content #transferBox.success > .content:nth-child(1):a
   left: -1px;
   position: absolute;
 }
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .true-sum {
+html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .true-sum,
+html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .order-id,
+html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .tr-id {
   margin: 0 1.8rem;
   border: dashed #979797;
   border-width: 1px 0 1px 0;
   padding: 1rem 0;
 }
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .true-sum .legend {
+html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .true-sum .legend,
+html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .order-id .legend,
+html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .tr-id .legend {
   width: 50%;
   font-size: 1.8rem;
   text-align: left;
   font-weight: 200;
   float: left;
 }
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .true-sum .sum {
+html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .true-sum .sum,
+html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .order-id .sum,
+html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .tr-id .sum,
+html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .true-sum .tr-id-value,
+html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .order-id .tr-id-value,
+html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .tr-id .tr-id-value,
+html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .true-sum .order-id-value,
+html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .order-id .order-id-value,
+html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .tr-id .order-id-value {
   width: 50%;
   float: right;
   text-align: right;
