@@ -71,13 +71,6 @@ $(function(){
     '</div>');
 
     $('#transferBox.success .content:first').append('' +
-    '<div class="tr-id">' +
-        '<div class="legend">ID Транзакции</div>' +
-        '<div class="tr-id-value"></div>' +
-        '<div class="spacer" style="clear: both;"></div>' +
-    '</div>');
-
-    $('#transferBox.success .content:first').append('' +
     '<div class="order-id">' +
         '<div class="legend">ID заказа</div>' +
         '<div class="order-id-value"></div>' +
