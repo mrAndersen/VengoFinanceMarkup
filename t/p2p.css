@@ -375,11 +375,15 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content #receiverCard {
   width: 25.1rem;
-  height: 8.4rem;
+  height: 9rem;
   background: #34495e;
   color: #fff;
   margin: 0 auto;
   border-radius: 0.2rem 0.2rem 0 0;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content #receiverCard .errorMessage {
+  margin: 0.4rem 1.6rem;
+  color: red;
 }
 html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form .content #receiverCard .receiverCard-numberLabel {
   text-transform: uppercase;

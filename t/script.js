@@ -22,7 +22,7 @@ function isValidForm()
 {
     var validity = true;
     var targets = $('#PayTransferForm_card, #PayTransferForm_exp_month, #PayTransferForm_exp_year, #PayTransferForm_cvc2, #PayTransferForm_payment_to, #PayTransferForm_amount');
-    var targets2 = $('#PayTransferForm_card_em_, #PayTransferForm_cvc2_em_, #PayTransferForm_cvc2_em_, #PayTransferForm_payment_to_em_');
+    var targets2 = $('#PayTransferForm_card_em_, #PayTransferForm_cvc2_em_, #PayTransferForm_cvc2_em_');
 
     targets.each(function(k,v){
         if(v.value == ''){
