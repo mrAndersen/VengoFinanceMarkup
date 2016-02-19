@@ -434,8 +434,7 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   margin: 0 0 0 -5.6rem;
   bottom: -3rem;
 }
-html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form #submitBox #proceedBox #send_button,
-html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form #submitBox #proceedBox #send_button:disabled {
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form #submitBox #proceedBox #send_button {
   margin: 2rem auto 3rem;
   font-size: 2rem;
   color: #fff;
@@ -448,6 +447,9 @@ html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form
   box-shadow: none;
   outline: none;
   -webkit-appearance: none;
+}
+html body #page #mainBox #content #transferBox #PAYTRANSFER_HEADER_ADAPTIVE form #submitBox #proceedBox #send_button:disabled {
+  background-color: #ccc;
 }
 html body .confirm {
   margin: 0 3.45rem;
