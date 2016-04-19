@@ -3,7 +3,7 @@
   padding: 0;
   border: none;
 }
-//@import url(//fonts.googleapis.com/css?family=Roboto:500,300&subset=cyrillic,latin);
+@import url(//fonts.googleapis.com/css?family=Roboto:500,300&subset=cyrillic,latin);
 
 html {
   font-family: 'Roboto', sans-serif;
@@ -39,7 +39,11 @@ html {
           }
           #transferBox{
             margin: 0 3.45rem 3.65rem;
-            &.success{
+            &.waiting{
+              margin: 8rem 3.45rem 3.65rem;
+              text-align: center;
+            }
+            &.success:not(.waiting){
               margin: 0;
               position: relative;
               &:after{

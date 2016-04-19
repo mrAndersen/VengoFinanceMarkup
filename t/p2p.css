@@ -1,3 +1,4 @@
+@import url(//fonts.googleapis.com/css?family=Roboto:500,300&subset=cyrillic,latin);
 * {
   margin: 0;
   padding: 0;
@@ -46,11 +47,15 @@ html body #page #mainBox #content #transferTotalAmount {
 html body #page #mainBox #content #transferBox {
   margin: 0 3.45rem 3.65rem;
 }
-html body #page #mainBox #content #transferBox.success {
+html body #page #mainBox #content #transferBox.waiting {
+  margin: 8rem 3.45rem 3.65rem;
+  text-align: center;
+}
+html body #page #mainBox #content #transferBox.success:not(.waiting) {
   margin: 0;
   position: relative;
 }
-html body #page #mainBox #content #transferBox.success:after {
+html body #page #mainBox #content #transferBox.success:not(.waiting):after {
   content: '';
   position: absolute;
   width: 11.2rem;
@@ -61,10 +66,10 @@ html body #page #mainBox #content #transferBox.success:after {
   margin: 0 0 0 -5.6rem;
   bottom: -6.8rem;
 }
-html body #page #mainBox #content #transferBox.success #proceedBox form {
+html body #page #mainBox #content #transferBox.success:not(.waiting) #proceedBox form {
   text-align: center;
 }
-html body #page #mainBox #content #transferBox.success #proceedBox form button {
+html body #page #mainBox #content #transferBox.success:not(.waiting) #proceedBox form button {
   margin: 3rem auto 9.5rem;
   font-size: 2rem;
   color: #fff;
@@ -75,7 +80,7 @@ html body #page #mainBox #content #transferBox.success #proceedBox form button {
   display: inline-block;
   font-family: 'Robot', sans-serif;
 }
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) {
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) {
   margin: 7.3rem 3.45rem 3.5rem;
   background: #fff;
   text-align: center;
@@ -83,7 +88,7 @@ html body #page #mainBox #content #transferBox.success > .content:nth-child(1) {
   position: relative;
   box-shadow: 0 1.5rem 1.75rem rgba(0, 0, 0, 0.1);
 }
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1):after {
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1):after {
   content: '';
   width: 100%;
   height: 12px;
@@ -92,32 +97,32 @@ html body #page #mainBox #content #transferBox.success > .content:nth-child(1):a
   left: -1px;
   position: absolute;
 }
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .true-sum,
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .order-id,
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .tr-id {
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) .true-sum,
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) .order-id,
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) .tr-id {
   margin: 0 1.8rem;
   border: dashed #979797;
   border-width: 1px 0 1px 0;
   padding: 1rem 0;
 }
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .true-sum .legend,
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .order-id .legend,
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .tr-id .legend {
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) .true-sum .legend,
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) .order-id .legend,
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) .tr-id .legend {
   width: 50%;
   font-size: 1.8rem;
   text-align: left;
   font-weight: 200;
   float: left;
 }
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .true-sum .sum,
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .order-id .sum,
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .tr-id .sum,
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .true-sum .tr-id-value,
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .order-id .tr-id-value,
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .tr-id .tr-id-value,
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .true-sum .order-id-value,
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .order-id .order-id-value,
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .tr-id .order-id-value {
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) .true-sum .sum,
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) .order-id .sum,
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) .tr-id .sum,
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) .true-sum .tr-id-value,
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) .order-id .tr-id-value,
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) .tr-id .tr-id-value,
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) .true-sum .order-id-value,
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) .order-id .order-id-value,
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) .tr-id .order-id-value {
   width: 50%;
   float: right;
   text-align: right;
@@ -125,21 +130,21 @@ html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .
   font-size: 1.8rem;
   font-weight: 500;
 }
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) h4 {
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) h4 {
   font-size: 1.85rem;
   font-weight: 500;
   margin: 2.7rem 3.7rem;
   display: inline-block;
 }
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .col {
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) .col {
   margin: 1.75rem;
   text-align: left;
 }
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .col p {
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) .col p {
   font-size: 1.1rem;
   font-weight: 200;
 }
-html body #page #mainBox #content #transferBox.success > .content:nth-child(1) .col p b {
+html body #page #mainBox #content #transferBox.success:not(.waiting) > .content:nth-child(1) .col p b {
   font-weight: 200;
 }
 html body #page #mainBox #content #transferBox.fail .content {
